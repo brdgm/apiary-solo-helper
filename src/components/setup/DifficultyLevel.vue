@@ -30,13 +30,9 @@
 import { defineComponent, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useStateStore } from '@/store/state'
-import AppIcon from '../structure/AppIcon.vue'
 
 export default defineComponent({
   name: 'DifficultyLevel',
-  components: {
-    AppIcon
-  },
   setup() {
     const { t } = useI18n()
     const state = useStateStore()
