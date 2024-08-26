@@ -22,7 +22,7 @@
     </ol>
   </div>
 
-  <img src="@/assets/setup/docking-mat.png" class="docking-mat"/>
+  <img src="@/assets/setup/docking-mat.png" class="docking-mat" alt=""/>
 
   <button class="btn btn-primary btn-lg mt-4" @click="startGame()">
     {{t('action.startGame')}}
@@ -67,24 +67,33 @@ export default defineComponent({
     },
     grayWorkerValues() : number[] {
       switch (this.state.setup.difficultyLevel) {
-        case 1: return [2, 1, 1]
-        case 2: return [2, 2, 1]
-        case 3: return [3, 2, 2]
-        case 4: return [3, 2, 2]
-        case 5: return [3, 2, 2]
-        case 6: return [3, 2, 2]
-        default: return []
+        case 1:
+          return [2, 1, 1]
+        case 2:
+          return [2, 2, 1]
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+          return [3, 2, 2]
+        default:
+          return []
       }
     },
     yellowWorkerValues() : number[] {
       switch (this.state.setup.difficultyLevel) {
-        case 1: return [2, 1]
-        case 2: return [2, 2]
-        case 3: return [3, 1]
-        case 4: return [3, 2]
-        case 5: return [3, 1]
-        case 6: return [3, 2]
-        default: return []
+        case 1:
+          return [2, 1]
+        case 2:
+          return [2, 2]
+        case 3:
+        case 5:
+          return [3, 1]
+        case 4:
+        case 6:
+          return [3, 2]
+        default:
+          return []
       }
     },
     gainedWorkerStrengthValue() : number {
