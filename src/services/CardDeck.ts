@@ -92,11 +92,9 @@ export default class CardDeck {
    * @param difficultyLevel DifficultyLevel
    */
   public static new() : CardDeck {
-    let roundPile : Card[]
-    let auxiliaryPile : Card[]
     const cards = shuffle(Cards.getAll())
-    roundPile = cards.slice(0, 4)
-    auxiliaryPile = cards.slice(4, 12)
+    const roundPile = cards.slice(0, 4)
+    const auxiliaryPile = cards.slice(4, 12)
     return new CardDeck(roundPile, [], auxiliaryPile, [])
   }
 
