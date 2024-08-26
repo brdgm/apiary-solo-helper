@@ -1,0 +1,44 @@
+<template>
+  <h1>{{t('setup.title')}}</h1>
+
+  <DifficultyLevel/>
+
+  <button class="btn btn-primary btn-lg mt-4" @click="setupBot()">
+    {{t('setupBot.title')}}
+  </button>
+
+  <FooterButtons endGameButtonType="abortGame"/>
+</template>
+
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useStateStore } from '@/store/state'
+import FooterButtons from '@/components/structure/FooterButtons.vue'
+import DifficultyLevel from '@/components/setup/DifficultyLevel.vue'
+import CardDeck from '@/services/CardDeck'
+
+export default defineComponent({
+  name: 'SetupGame',
+  components: {
+    FooterButtons,
+    DifficultyLevel
+  },
+  setup() {
+    const { t } = useI18n()
+    const state = useStateStore()
+
+    return { t, state }
+  },
+  methods: {
+    setupBot() : void {
+      this.state.resetGame()
+
+      const cardDeck = CardDeck.new()
+      this.state.setup.initialCardDeck = cardDeck.toPersistence()
+
+      this.$router.push('/setupBot')
+    }
+  }
+})
+</script>

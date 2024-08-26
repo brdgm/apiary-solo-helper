@@ -15,6 +15,7 @@ export const useStateStore = defineStore(`${name}.state`, {
   },
   actions: {
     resetGame() {
+      this.setup.initialCardDeck = undefined
       this.rounds = []
     }
   },
@@ -29,6 +30,7 @@ export interface State {
 }
 export interface Setup {
   difficultyLevel: DifficultyLevel
+  initialCardDeck?: CardDeckPersistence
   debugMode?: boolean
 }
 

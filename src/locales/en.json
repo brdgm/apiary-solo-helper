@@ -6,6 +6,19 @@
     "play2": "TBD",
     "feedback": "Discussion and Feedback:"
   },
+  "setup": {
+    "title": "Setup Game",
+    "difficultyLevel": {
+      "title": "Difficulty Level",
+      "easy": "Easy",
+      "hard": "Hard",
+      "level": "Level {level}",
+      "expertMode": "Expert Mode"
+    }
+  },
+  "setupBot": {
+    "title": "Setup Automa"
+  },
   "action": {
     "playGame": "Play Game",
     "startGame": "Start Game",

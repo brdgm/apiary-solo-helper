@@ -6,6 +6,19 @@
     "play2": "TBD",
     "feedback": "Discussion and Feedback:"
   },
+  "setup": {
+    "title": "Spielaufbau",
+    "difficultyLevel": {
+      "title": "Schwierigkeitsgrad",
+      "easy": "Leicht",
+      "hard": "Schwer",
+      "level": "Stufe {level}",
+      "expertMode": "Experten-Modus"
+    }
+  },
+  "setupBot": {
+    "title": "Automa Spielaufbau"
+  },
   "action": {
     "playGame": "Spielen",
     "startGame": "Spiel starten",
