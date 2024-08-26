@@ -28,6 +28,7 @@ export default defineComponent({
   display: inline-block;
   height: 1.75rem;
   width: 1.75rem;
+  text-align: center;
   .icon {
     height: 100%;
   }

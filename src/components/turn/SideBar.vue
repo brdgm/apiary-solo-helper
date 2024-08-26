@@ -3,12 +3,13 @@
     <p>
       Turn {{navigationState.turn}}
     </p>
-    <table>
+    <b>Automa</b>
+    <table class="small">
       <tr>
         <td>
-          Automa VP
+          Score
         </td>
-        <td>
+        <td class="number">
           {{navigationState.victoryPoints}}
         </td>
       </tr>
@@ -16,15 +17,13 @@
         <td>
           {{navigationState.tiles.count(tile)}} x <TileIcon :tile="tile" class="tileIcon"/> =
         </td>
-        <td>
+        <td class="number">
           {{getTileVP(tile) * navigationState.tiles.count(tile)}}
         </td>
       </tr>
       <tr>
-        <td>
-          Total
-        </td>
-        <td>
+        <td></td>
+        <td class="number total">
           {{totalVP}}
         </td>
       </tr>
@@ -109,5 +108,14 @@ export default defineComponent({
 .tileIcon {
   height: 1.25rem;
   width: 1.25rem;
+}
+.number {
+  text-align: right;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.total {
+  border-top: 1px solid black;
+  font-weight: bold;
 }
 </style>
