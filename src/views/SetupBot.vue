@@ -108,7 +108,7 @@ export default defineComponent({
   },
   methods: {
     startGame() : void {
-      this.$router.push('/round/1/bot')
+      this.$router.push('/turn/1/bot')
     }
   }
 })

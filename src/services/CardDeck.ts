@@ -12,7 +12,7 @@ export default class CardDeck {
   private _pile
   private _discard
 
-  public constructor(pile : Card[], discard : Card[]) {
+  private constructor(pile : Card[], discard : Card[]) {
     this._pile = ref(pile)
     this._discard = ref(discard)
   }

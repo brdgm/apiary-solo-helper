@@ -41,6 +41,13 @@
     "placeWorkers": "Place the following workers on her docking mat:",
     "placeAutomaGainedWorkerStrength": "Place the Automa Gained Worker Strength token on the docking mat with the <b>value {value}</b> shown."
   },
+  "turnBot": {
+    "title": "Automa"
+  },
+  "turnPlayer": {
+    "title": "Player",
+    "takeYourTurn": "Take your turn."
+  },
   "action": {
     "playGame": "Play Game",
     "startGame": "Start Game",

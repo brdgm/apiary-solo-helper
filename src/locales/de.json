@@ -41,6 +41,13 @@
     "placeWorkers": "Lege die folgenden Arbeiterinnen auf ihre Andockstation:",
     "placeAutomaGainedWorkerStrength": "Lege das Automa-Plättchen für die Stärke neuer Arbeiterinnen auf ihre Andockstation mit der <b>Stärke {value}</b> nach oben."
   },
+  "turnBot": {
+    "title": "Automa"
+  },
+  "turnPlayer": {
+    "title": "Spieler",
+    "takeYourTurn": "Führe deinen Zug aus."
+  },
   "action": {
     "playGame": "Spielen",
     "startGame": "Spiel starten",
