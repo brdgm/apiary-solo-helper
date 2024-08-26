@@ -48,6 +48,14 @@
     "title": "Spieler",
     "takeYourTurn": "Führe deinen Zug aus."
   },
+  "gameAction": {
+    "explore": "Erkunden",
+    "grow": "Wachsen",
+    "convert": "Umwandeln",
+    "research": "Forschen",
+    "advance": "Ausbauen",
+    "carve": "Rühmen"
+  },
   "action": {
     "playGame": "Spielen",
     "startGame": "Spiel starten",

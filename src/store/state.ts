@@ -47,6 +47,7 @@ export interface Turn {
 export interface BotPersistence {
   cardDeck: CardDeckPersistence
   tiles: TilePersistence[]
+  victoryPoints: number
 }
 export interface TilePersistence {
   tile: Tile

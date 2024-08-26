@@ -48,6 +48,14 @@
     "title": "Player",
     "takeYourTurn": "Take your turn."
   },
+  "gameAction": {
+    "explore": "Explore",
+    "grow": "Grow",
+    "convert": "Convert",
+    "research": "Research",
+    "advance": "Advance",
+    "carve": "Carve"
+  },
   "action": {
     "playGame": "Play Game",
     "startGame": "Start Game",

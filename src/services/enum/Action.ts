@@ -7,7 +7,6 @@ enum Action {
   CONVERT = 'convert',
   RESEARCH = 'research',
   ADVANCE = 'advance',
-  CARVE = 'carve',
-  RETRIEVE = 'retrieve'
+  CARVE = 'carve'
 }
 export default Action

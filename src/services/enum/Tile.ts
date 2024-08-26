@@ -5,6 +5,7 @@ enum Tile {
   FARM = 'farm',
   RECRUIT = 'recruit',
   DEVELOPMENT = 'development',
-  CARVING = 'carving'
+  CARVING = 'carving',
+  EXPLORE = 'explore'
 }
 export default Tile

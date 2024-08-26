@@ -18,7 +18,7 @@ export default class BotTiles {
   }
 
   count(tile : Tile) : number {
-    return this._tiles.get(tile) || 0
+    return this._tiles.get(tile) ?? 0
   }
 
   /**
