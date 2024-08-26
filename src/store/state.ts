@@ -37,8 +37,6 @@ export interface Round {
 }
 
 export interface CardDeckPersistence {
-  roundPile: string[]
-  roundDiscard: string[]
-  auxiliaryPile: string[]
-  auxiliaryDiscard: string[]
+  pile: number[]
+  discard: number[]
 }

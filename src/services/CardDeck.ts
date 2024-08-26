@@ -5,74 +5,50 @@ import { CardDeckPersistence } from '@/store/state'
 import { ref } from 'vue'
 
 /**
- * Manages the two Apiary card decks: game round card deck (4 cards), and auxiliary card deck (8 cards).
+ * Manages the Automa card deck with action and support sides.
  */
 export default class CardDeck {
 
-  private _roundPile
-  private _roundDiscard
-  private _auxiliaryPile
-  private _auxiliaryDiscard
+  private _pile
+  private _discard
 
-  public constructor(roundPile : Card[], roundDiscard : Card[], auxiliaryPile : Card[], auxiliaryDiscard : Card[]) {
-    this._roundPile = ref(roundPile)
-    this._roundDiscard = ref(roundDiscard)
-    this._auxiliaryPile = ref(auxiliaryPile)
-    this._auxiliaryDiscard = ref(auxiliaryDiscard)
+  public constructor(pile : Card[], discard : Card[]) {
+    this._pile = ref(pile)
+    this._discard = ref(discard)
   }
 
-  public get currentRoundCard() : Card|undefined {
-    return this.roundDiscard[0]
+  public get actionCard() : Card|undefined {
+    return this._discard.value[0]
   }
 
-  public get roundPile() : readonly Card[] {
-    return this._roundPile.value
+  public get supportCard() : Card|undefined {
+    return this._pile.value[0]
   }
 
-  public get roundDiscard() : readonly Card[] {
-    return this._roundDiscard.value
+  public get pile() : readonly Card[] {
+    return this._pile.value
   }
 
-  public get currentAuxiliaryCard() : Card|undefined {
-    return this.auxiliaryDiscard[0]
-  }
-
-  public get auxiliaryPile() : readonly Card[] {
-    return this._auxiliaryPile.value
-  }
-
-  public get auxiliaryDiscard() : readonly Card[] {
-    return this._auxiliaryDiscard.value
+  public get discard() : readonly Card[] {
+    return this._discard.value
   }
 
   /**
-   * Draws next card from round pile.
-   * If no card left an error is thrown.
-   * @returns New current card
+   * Draws next card.
+   * If not sufficient cards are left, the discard pile is shuffled back into the pile.
    */
-  public drawRound() : Card {
-    const card = this._roundPile.value.shift()
+  public draw() : void {
+    const card = this._pile.value.shift()
     if (!card) {
-      throw new Error('No more round cards left.')
+      throw new Error('Pile is empty.')
     }
-    this._roundDiscard.value.unshift(card)
-    return card
-  }
-
-  /**
-   * Draws next card from auxiliary pile.
-   * If no card is left the pile is reshuffled.
-   * @returns New current card
-   */
-  public drawAuxiliary() : Card {
-    const card = this._auxiliaryPile.value.shift()
-    if (card) {
-      this._auxiliaryDiscard.value.unshift(card)
-      return card
+    this._discard.value.unshift(card)
+    // empty pile? shuffle and draw again
+    if (this._pile.value.length === 0) {
+      this._pile.value = shuffle(this._discard.value)
+      this._discard.value = []
+      this.draw()
     }
-    this._auxiliaryPile.value = shuffle(this._auxiliaryDiscard.value)
-    this._auxiliaryDiscard.value = []
-    return this.drawAuxiliary()
   }
 
   /**
@@ -80,10 +56,8 @@ export default class CardDeck {
    */
   public toPersistence() : CardDeckPersistence {
     return {
-      roundPile: this._roundPile.value.map(card => card.id),
-      roundDiscard: this._roundDiscard.value.map(card => card.id),
-      auxiliaryPile: this._auxiliaryPile.value.map(card => card.id),
-      auxiliaryDiscard: this._auxiliaryDiscard.value.map(card => card.id)
+      pile: this._pile.value.map(card => card.id),
+      discard: this._discard.value.map(card => card.id),
     }
   }
 
@@ -93,9 +67,7 @@ export default class CardDeck {
    */
   public static new() : CardDeck {
     const cards = shuffle(Cards.getAll())
-    const roundPile = cards.slice(0, 4)
-    const auxiliaryPile = cards.slice(4, 12)
-    return new CardDeck(roundPile, [], auxiliaryPile, [])
+    return new CardDeck(cards, [])
   }
 
   /**
@@ -103,10 +75,8 @@ export default class CardDeck {
    */
   public static fromPersistence(persistence : CardDeckPersistence) : CardDeck {
     return new CardDeck(
-      persistence.roundPile.map(Cards.get),
-      persistence.roundDiscard.map(Cards.get),
-      persistence.auxiliaryPile.map(Cards.get),
-      persistence.auxiliaryDiscard.map(Cards.get)
+      persistence.pile.map(Cards.get),
+      persistence.discard.map(Cards.get)
     )
   }
 
