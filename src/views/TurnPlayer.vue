@@ -1,4 +1,6 @@
 <template>
+  <SideBar :navigationState="navigationState"/>
+
   <h1 v-html="t('turnPlayer.title')"></h1>
 
   <p v-html="t('turnPlayer.takeYourTurn')"></p>
@@ -20,11 +22,13 @@ import { useRoute } from 'vue-router'
 import { useStateStore } from '@/store/state'
 import NavigationState from '@/util/NavigationState'
 import DebugInfo from '@/components/turn/DebugInfo.vue'
+import SideBar from '@/components/turn/SideBar.vue'
 
 export default defineComponent({
   name: 'TurnPlayer',
   components: {
     FooterButtons,
+    SideBar,
     DebugInfo
   },
   setup() {

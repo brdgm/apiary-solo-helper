@@ -1,4 +1,6 @@
 <template>
+  <SideBar :navigationState="navigationState"/>
+
   <h1 v-html="t('turnBot.title')"></h1>
 
   <ActionRetrieve :navigationState="navigationState" @scoreVP="nextScoreVP"/>
@@ -40,6 +42,7 @@ import ActionCarve from '@/components/turn/ActionCarve.vue'
 import ActionExplore from '@/components/turn/ActionExplore.vue'
 import ActionAdvance from '@/components/turn/ActionAdvance.vue'
 import ActionScoreWorker from '@/components/turn/ActionScoreWorker.vue'
+import SideBar from '@/components/turn/SideBar.vue'
 
 export default defineComponent({
   name: 'TurnBot',
@@ -50,6 +53,7 @@ export default defineComponent({
     ActionExplore,
     ActionAdvance,
     ActionScoreWorker,
+    SideBar,
     DebugInfo
   },
   setup() {

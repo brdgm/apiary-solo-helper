@@ -2,8 +2,7 @@
   <div class="mt-4" v-if="state.setup.debugMode">
     <hr/>
     <p class="debug">
-      <b>cardDeck</b>: {{navigationState.cardDeck.toPersistence()}}<br/>
-      <b>tiles</b>: {{navigationState.tiles.toPersistence()}}
+      <b>cardDeck</b>: {{navigationState.cardDeck.toPersistence()}}
     </p>
   </div>
 </template>
