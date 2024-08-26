@@ -17,7 +17,7 @@
     <div class="col-11 offset-1">
       <i>
         {{t('setup.difficultyLevel.level',{level:difficultyLevel})}}
-        <template v-if="difficultyLevel >= 5">
+        <template v-if="expertMode">
           ({{t('setup.difficultyLevel.expertMode')}})
         </template>
       </i>
@@ -40,6 +40,11 @@ export default defineComponent({
     const difficultyLevel = ref(state.setup.difficultyLevel)
 
     return { t, state, difficultyLevel }
+  },
+  computed: {
+    expertMode() : boolean {
+      return this.difficultyLevel >= 5
+    }
   },
   methods: {
     updateDifficultyLevel(event: Event) {

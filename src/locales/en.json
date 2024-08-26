@@ -8,6 +8,17 @@
   },
   "setup": {
     "title": "Setup Game",
+    "general": {
+      "title": "General Setup",
+      "setup2Players": "Setup a 2-player game.",
+      "pickPlayerColor": "Pick a player color (<i>gray</i> and <i>yellow</i> are used by the Automa).",
+      "remove": {
+        "title": "Remove from the game:",
+        "seedCards": "Seed cards with interactive one-time benefits: 32, 35, 37, and 38",
+        "carvingTiles": "Carving tile <i>Proliferation</i>",
+        "factions": "Factions <i>Ria</i> and <i>Capen</i>"
+      }
+    },
     "difficultyLevel": {
       "title": "Difficulty Level",
       "easy": "Easy",
@@ -17,7 +28,18 @@
     }
   },
   "setupBot": {
-    "title": "Setup Automa"
+    "title": "Setup Automa",
+    "botColor": "The main player color of Automa is gray.",
+    "firstPlayerScoreTrack": "Automa is the first player. Place one gray player tokens on the <b>1 space</b> of the Score Track.",
+    "returnPlayerTokens": "Return the other two player tokens to the box as she does not advance on the Queen’s Favor track or teach dances.",
+    "placeDockingMat": {
+      "normal": "Place Automa’s docking mat with the <b>normal side</b> facing up.",
+      "expert": "Place Automa’s docking mat with the <b>expert side</b> facing up."
+    },
+    "noHiveMatFactionTile": "Automa does not get a hive mat or faction tile.",
+    "placeHibernationTokens": "Place 7 gray hibernation tokens on her docking mat.",
+    "placeWorkers": "Place the following workers on her docking mat:",
+    "placeAutomaGainedWorkerStrength": "Place the Automa Gained Worker Strength token on the docking mat with the <b>value {value}</b> shown."
   },
   "action": {
     "playGame": "Play Game",

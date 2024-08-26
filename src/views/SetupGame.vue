@@ -1,6 +1,20 @@
 <template>
   <h1>{{t('setup.title')}}</h1>
 
+  <h2 v-html="t('setup.general.title')"></h2>
+  <div class="instructions">
+    <ol>
+      <li v-html="t('setup.general.setup2Players')"></li>
+      <li v-html="t('setup.general.pickPlayerColor')"></li>
+      <li v-html="t('setup.general.remove.title')"></li>
+      <ul>
+        <li v-html="t('setup.general.remove.seedCards')"></li>
+        <li v-html="t('setup.general.remove.carvingTiles')"></li>
+        <li v-html="t('setup.general.remove.factions')"></li>
+      </ul>
+    </ol>
+  </div>
+
   <DifficultyLevel/>
 
   <button class="btn btn-primary btn-lg mt-4" @click="setupBot()">
@@ -42,3 +56,12 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="scss" scoped>
+.instructions {
+  max-width: 1000px;
+  ol > li {
+    margin-top: 0.5rem;
+  }
+}
+</style>

@@ -8,6 +8,17 @@
   },
   "setup": {
     "title": "Spielaufbau",
+    "general": {
+      "title": "Allgemeiner Aufbau",
+      "setup2Players": "Baue das Spiel für 2 Personen auf.",
+      "pickPlayerColor": "Wähle eine Spielerfarbe (<i>grau</i> und <i>gelb</i> werden von Automa verwendet).",
+      "remove": {
+        "title": "Entferne aus dem Spiel:",
+        "seedCards": "Saatkarten mit interaktiven Einmalnutzen: 32, 35, 37 und 38",
+        "carvingTiles": "Ruhmeswabe <i>Ausbreitung</i>",
+        "factions": "Fraktionen <i>Ria</i> und <i>Capen</i>"
+      }
+    },
     "difficultyLevel": {
       "title": "Schwierigkeitsgrad",
       "easy": "Leicht",
@@ -17,7 +28,18 @@
     }
   },
   "setupBot": {
-    "title": "Automa Spielaufbau"
+    "title": "Automa Spielaufbau",
+    "botColor": "Die primäre Spielerfarbe von Automa ist grau.",
+    "firstPlayerScoreTrack": "Automa beginnt das Spiel. Lege einen grauen Farbwürfel auf der Siegpunktskala auf das <b>Feld mit 1</b>.",
+    "returnPlayerTokens": "Lege die anderen Farbwürfel in die Schachtel zurück, weil Automa keine Schritte auf der Skala für die Gunst der Königin voranschreitet und keinen Tanz lehrt.",
+    "placeDockingMat": {
+      "normal": "Lege die Automa-Andockstation mit der <b>normalen Seite</b> nach oben.",
+      "expert": "Lege die Automa-Andockstation mit der <b>Experten-Seite</b> nach oben."
+    },
+    "noHiveMatFactionTile": "Automa bekommt kein Bienenstock-Tableau und kein Startplättchen.",
+    "placeHibernationTokens": "Lege 7 graue Tiefschlafplättchen auf ihre Andockstation.",
+    "placeWorkers": "Lege die folgenden Arbeiterinnen auf ihre Andockstation:",
+    "placeAutomaGainedWorkerStrength": "Lege das Automa-Plättchen für die Stärke neuer Arbeiterinnen auf ihre Andockstation mit der <b>Stärke {value}</b> nach oben."
   },
   "action": {
     "playGame": "Spielen",

@@ -8,7 +8,7 @@ export const useStateStore = defineStore(`${name}.state`, {
       language: 'en',
       baseFontSize: 1.0,
       setup: {
-        difficultyLevel: DifficultyLevel.NORMAL_1
+        difficultyLevel: DifficultyLevel.NORMAL_2
       },
       rounds: []
     } as State
