@@ -16,13 +16,6 @@ export default class NavigationState {
   readonly victoryPoints : number
   readonly expertMode : boolean
 
-  readonly retrieveLimit: number
-  readonly carveSteps?: number
-  readonly action: Action
-  readonly worker: Worker
-  readonly sCurve: SCurve
-  readonly resource: Resource
-
   public constructor(route: RouteLocation, state: State) {
     this.turn = getIntRouteParam(route, 'turn')
 
@@ -46,16 +39,30 @@ export default class NavigationState {
     }
 
     this.expertMode = state.setup.difficultyLevel >= 5
+  }
 
-    const actionCard = this.cardDeck.actionCard
-    this.retrieveLimit = actionCard?.retrieveLimit ?? 0
-    this.carveSteps = actionCard?.carveSteps
-    this.action = actionCard?.action ?? Action.EXPLORE
-    
-    const supportCard = this.cardDeck.supportCard
-    this.worker = supportCard?.worker ?? Worker.GRAY
-    this.sCurve = supportCard?.sCurve ?? SCurve.LEFT_TOP
-    this.resource = supportCard?.resource ?? Resource.FIBER
+  public get retrieveLimit(): number {
+    return this.cardDeck.actionCard?.retrieveLimit ?? 0
+  }
+
+  public get carveSteps(): number|undefined {
+    return this.cardDeck.actionCard?.carveSteps ?? 0
+  }
+
+  public get action(): Action {
+    return this.cardDeck.actionCard?.action ?? Action.EXPLORE
+  }
+
+  public get worker(): Worker {
+    return this.cardDeck.supportCard?.worker ?? Worker.GRAY
+  }
+  
+  public get sCurve(): SCurve {
+    return this.cardDeck.supportCard?.sCurve ?? SCurve.LEFT_TOP
+  }
+  
+  public get resource(): Resource {
+    return this.cardDeck.supportCard?.resource ?? Resource.FIBER
   }
 
 }
