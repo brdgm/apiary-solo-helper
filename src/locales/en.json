@@ -1,0 +1,199 @@
+{
+  "gameTitle": "Apiary",
+  "home": {
+    "title": "Apiary Solo Helper",
+    "play1": "Play <a href='https://boardgamegeek.com/boardgame/400314/apiary' target='_blank' rel='noopener'><b>Apiary</b></a> against Automa, the artificial opponent.",
+    "play2": "This application replaces the Automa card deck, counts the victory points and guides you through the Automa ruleset.",
+    "feedback": "Discussion and Feedback:"
+  },
+  "setup": {
+    "title": "Setup Game",
+    "general": {
+      "title": "General Setup",
+      "setup2Players": "Setup a 2-player game.",
+      "pickPlayerColor": "Pick a player color (<i>gray</i> and <i>yellow</i> are used by the Automa).",
+      "remove": {
+        "title": "Remove from the game:",
+        "seedCards": "Seed cards with interactive one-time benefits: 32, 35, 37, and 38",
+        "carvingTiles": "Carving tile <i>Proliferation</i>",
+        "factions": "Factions <i>Ria</i> and <i>Capen</i>"
+      }
+    },
+    "difficultyLevel": {
+      "title": "Difficulty Level",
+      "easy": "Easy",
+      "hard": "Hard",
+      "level": "Level {level}",
+      "expertMode": "Expert Mode"
+    }
+  },
+  "setupBot": {
+    "title": "Setup Automa",
+    "botColor": "The main player color of Automa is gray.",
+    "firstPlayerScoreTrack": "Automa is the first player. Place one gray player tokens on the <b>1 space</b> of the Score Track.",
+    "returnPlayerTokens": "Return the other two player tokens to the box as she does not advance on the Queen’s Favor track or teach dances.",
+    "placeDockingMat": {
+      "normal": "Place Automa’s docking mat with the <b>normal side</b> facing up.",
+      "expert": "Place Automa’s docking mat with the <b>expert side</b> facing up."
+    },
+    "noHiveMatFactionTile": "Automa does not get a hive mat or faction tile.",
+    "placeHibernationTokens": "Place 7 gray hibernation tokens on her docking mat.",
+    "placeWorkers": "Place the following workers on her docking mat:",
+    "placeAutomaGainedWorkerStrength": "Place the Automa Gained Worker Strength token on the docking mat with the <b>value {value}</b> shown."
+  },
+  "turnBot": {
+    "title": "Automa",
+    "pickHighest": "Pick highest available:",
+    "placeWorker": "Place:",
+    "retrieve": {
+      "onDockingMat1": "<b>0</b>",
+      "onDockingMatOr": "or <b>{value}</b>",
+      "onDockingMat2": "on docking mat?",
+      "retrieveAll1": "Retrieve all",
+      "retrieveAll2": "&"
+    },
+    "carve": {
+      "title": "Carve {value}",
+      "followPath": "Follow this path and pick the <b>{position}</b> available carving tile.",
+      "noTile": "If no carving tile is left, this action cannot be executed.",
+      "getTile": "Get"
+    },
+    "explore": {
+      "title": "Explore {value}",
+      "secondIteration": "Execute this action <b>again</b>, as a strength-4 worker was used.",
+      "moveQueenShip": "Move the QueenShip along the path as indicated:",
+      "moveDistance": "Stop it when it reaches a planet that has not yet been explored, or if it has moved <b>{value} step(s)</b>. If the planet has not yet been explored, Automa gets the token, but ignores the bonus.",
+      "placeResource": "If the planet has an empty resource space, place this token:",
+      "explorerPlanet": "Explore Planet",
+      "visitPlanet": "Visit Planet",
+      "rules": {
+        "title": "Show Movement Rules",
+        "skipLocations": "If the path takes the QueenShip to the planet that the QueenShip began this turn on or to the QueenShip starting location space, continue moving through it and do not count it towards the number of spaces moved.",
+        "example1": {
+          "title": "Explore Example 1",
+          "desc1": "Automa can move the QueenShip up to 4 spaces to find an explore token. The S-curve indicates it should move right, then down 1 row, then left, etc.",
+          "desc2": "Moving to the right, it reaches the end of the row (1). Therefore, it moves down one row and, ignoring the QueenShip starting location space, it then moves left (2). As this planet is already explored, it continues and discovers an unexplored planet (3)."
+        },
+        "example2": {
+          "title": "Explore Example 2",
+          "desc1": "The S-curve indicates that the QueenShip should move left, then up 1 row, then right, etc.",
+          "desc2": "After moving one space to the left (1), the QueenShip reaches the end of the row and cannot move up (see S-curve: The Path Ends on p.11). Since it can go no further along the S-curve path, it will reverse course and move right, then down 1 row, then left. Skipping the spot that it began on, the QueenShip moves right to an explored planet (2). Reaching the end of the row, it moves down to find an unexplored planet and explores there (3). If that planet had already been explored, the QueenShip would have moved once more to the left and explore there (4)."
+        }
+      }
+    },
+    "advance": {
+      "getTile": "For each tile type displayed for the selected worker, remove the first two tiles from the left. Automa gets the first one, the second one is discarded."
+    },
+    "scoreWorker": {
+      "placeScore": "Place the selected worker. Automa gains victory points."
+    }
+  },
+  "turnPlayer": {
+    "title": "Player",
+    "takeYourTurn": "Take your turn."
+  },
+  "endGameScoring": {
+    "title": "Scoring",
+    "automa": {
+      "title": "Automa",
+      "tally": "Add the following to Automa's score:"
+    },
+    "player": {
+      "title": "Player",
+      "tally": "Add the following to your score:"
+    },
+    "option": {
+      "seedCards": "Meeting the conditions on any <b>seed cards</b> you planted",
+      "tiles": "<b>Farms</b>, <b>recruits</b>, and <b>developments</b> you built",
+      "carvings": "Meeting the conditions on any <b>carvings</b> you built",
+      "queensFavor": "Your position on the <b>Queen’s Favor</b> track",
+      "hiveMatFrames": "<b>Filling</b> your hive mat and frames",
+      "factionAbility": "Your <b>faction’s endgame ability</b>",
+      "hibernationComb": "Winning <b>Hibernation Comb</b> sector majorities"
+    },
+    "ties": "<b>Ties</b>: In the event of a tie, you win if you have taught a dance. If not, Automa wins."
+  },
+  "sideBar": {
+    "turn": "Turn {turn}",
+    "automa": "Automa",
+    "score": "Victory Points"
+  },
+  "rules": {
+    "general": {
+      "title": "Automa Rules",
+      "simplified": {
+        "intro": "Playing against Automa, you follow the same rules as you would in a multiplayer game. Automa plays by a simplified ruleset:",
+        "noResources": "Automa never gains resources and never needs to pay resource costs.",
+        "workersTwoColors": "Automa uses workers of 2 different colors (yellow and gray). The different colors only  matter when determining which workers get placed and retrieved.",
+        "workerBumped": "When Automa’s workers are bumped, if they’re not strength-4, they always return to her active pool.",
+        "workerNeverReturn": "Automa’s workers never return to the general supply. When one of her workers hibernates, she immediately gains a new one.",
+        "victoryPoints": "Automa only gains victory points when indicated by this application.",
+        "victoryPointFlow": "Automa will generally gain more victory points than you will during the game. However, the more she gains during the game, the less she gains at the end."
+      },
+      "takeAction": {
+        "title": "Take an Action",
+        "oneAction": "Automa will always take exactly 1 action per turn. Check the available options on screen and pick the first one that can be executed from top to bottom."
+      },
+      "convertDances": {
+        "title": "Convert - Dances",
+        "noDance": "Automa never teaches dances.",
+        "playerDance": "If <b>you</b> teach a dance, you immediately receive a one-time benefit of <b>4 Queens Favor</b>. Automa never uses the dance."
+      },
+      "retrieve": {
+        "title": "Retrieve",
+        "automaRetrieve": "When Automa retrieves workers, she only retrieves the workers of the color shown. For each worker, if it is strength-4 it must immediately hibernate. Otherwise, increase the worker’s strength by +1 and return it to Automa’s docking mat, Automa gains no income from retrieving workers."
+      },
+      "bumpedWorkers": {
+        "title": "Bumped Workers",
+        "workerBumped": "When an Automa worker is bumped, if it is strength-4 it must immediately hibernate. Otherwise, increase the worker’s strength by +1 and return it to Automa’s docking mat. There is no landing area on Automa’s docking mat. All workers on the mat are active."
+      },
+      "hibernation": {
+        "title": "Hibernation",
+        "workerHibernates": "Any time an Automa worker hibernates (e.g., via being bumped or retrieved), it is immediately replaced by a new worker, gained with a strength based upon the difficulty level (the value is shown on the Gained Worker Strength token). Place this new worker on Automa’s docking mat.",
+        "chooseHibernationComb": "Then, Automa will choose the Hibernation Comb sector that, by placing her token there, increases the she victory points will score from area majority, more. She ignores any impact it might have on what you will score. If it is a tie, she chooses the 5-pod sector.",
+        "sectorPlacement": "In the chosen sector, place one of Automa’s hibernation tokens on the first vacant pod, using English reading order. For the 5-pod sector, this means left to right. For the 3-pod sector, this means first the top one, then the bottom line from left to right.",
+        "noBenefit": "Automa does not gain the benefit printed on the board and does not refresh a tile row, where applicable."
+      },
+      "specialCase": {
+        "title": "Special Case",
+        "carvingExchange": "For the carving <i>Exchange</i>, you copy one of Automa’s carvings."
+      }
+    }
+  },
+  "gameAction": {
+    "explore": "Explore",
+    "grow": "Grow",
+    "convert": "Convert",
+    "research": "Research",
+    "advance": "Advance",
+    "carve": "Carve"
+  },
+  "position": {
+    "1": "1st",
+    "2": "2nd",
+    "3": "3rd"
+  },
+  "action": {
+    "playGame": "Play Game",
+    "startGame": "Start Game",
+    "next": "Next",
+    "nextRound": "Next Round",
+    "abortGame": "Abort Game",
+    "abortGameConfirm": "Aborting the running game - are you sure?",
+    "endGame": "End Game",
+    "endGameConfirm": "End this game and return to home screen - are you sure?",
+    "endGameGoToScoringConfirm": "End this game and go to scoring screen?",
+    "cancel": "Cancel",
+    "backToHome": "Back to Home",
+    "back": "Back",
+    "close": "Close",
+    "ok": "OK"
+  },
+  "footer": {
+    "credits": "Credits"
+  },
+  "serviceWorkerUpdatedRefresh": {
+    "title": "Refresh Application",
+    "notice": "The application was updated - do you want to refresh to use the latest version?"
+  }
+}

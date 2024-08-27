@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 7 19.1" style="enable-background:new 0 0 7 19.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E8A733;}
+	.st1{fill:#00A9CE;}
+	.st2{fill:#B6D77B;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;stroke:#18171C;stroke-width:0.174;}
+	.st5{fill:none;stroke:#18171C;stroke-width:0.166;}
+	.st6{fill:none;stroke:#000000;stroke-width:0.26;stroke-dasharray:0.981,0.981;}
+	.st7{fill:none;stroke:#000000;stroke-width:0.26;}
+</style>
+<g>
+	<path class="st0" d="M3.5,3.5l-3-1.7c-1,1.7-0.4,3.8,1.3,4.8C2.3,6.8,2.8,7,3.5,7V3.5z"/>
+	<path class="st1" d="M3.5,3.5l3-1.7c-1-1.7-3.1-2.2-4.8-1.3c-0.6,0.3-1,0.7-1.3,1.3L3.5,3.5z"/>
+	<path class="st2" d="M3.5,3.5V7C5.4,7,7,5.4,7,3.5c0-0.6-0.1-1.2-0.5-1.7L3.5,3.5z"/>
+</g>
+<g>
+	<path class="st3" d="M3.5,6.8c1.8,0,3.3-1.5,3.3-3.3c0-1.8-1.5-3.3-3.3-3.3c-1.8,0-3.3,1.5-3.3,3.3C0.2,5.3,1.7,6.8,3.5,6.8 M3.5,7
+		C1.6,7,0,5.4,0,3.5S1.6,0,3.5,0C5.4,0,7,1.6,7,3.5S5.4,7,3.5,7"/>
+</g>
+<g>
+	<polyline class="st4" points="4.8,10.8 3.4,12.1 1.9,10.8 	"/>
+</g>
+<g>
+	<line class="st5" x1="3.4" y1="12.2" x2="3.4" y2="8.2"/>
+	<line class="st5" x1="2.6" y1="11.5" x2="2.6" y2="8.2"/>
+	<line class="st5" x1="4.1" y1="11.5" x2="4.1" y2="8.2"/>
+</g>
+<g>
+	<line class="st6" x1="0.5" y1="14.5" x2="0.5" y2="18"/>
+	<line class="st6" x1="2" y1="18.9" x2="5.4" y2="18.9"/>
+	<line class="st6" x1="6.4" y1="17.5" x2="6.4" y2="14"/>
+	<line class="st6" x1="5" y1="13" x2="1.5" y2="13"/>
+	<path class="st7" d="M1,13H0.5v0.5 M6.4,13.5V13H5.9 M5.9,18.9h0.5v-0.5 M0.5,18.4v0.5H1"/>
+</g>
+</svg>
