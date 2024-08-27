@@ -3,7 +3,7 @@
   "home": {
     "title": "Astrobienen Solo Helper",
     "play1": "Spiele <a href='https://boardgamegeek.com/boardgame/400314/Astrobienen' target='_blank' rel='noopener'><b>Astrobienen</b></a> gegen Automa, die künstliche Gegenspielerin.",
-    "play2": "TBD",
+    "play2": "Diese Applikation ersetzt das Automa-Kartendeck, zählt die Siegpunkte und führt dich durch das Automa-Regelwerk.",
     "feedback": "Discussion and Feedback:"
   },
   "setup": {
@@ -96,6 +96,48 @@
     "turn": "Zug {turn}",
     "automa": "Automa",
     "score": "Siegpunkte"
+  },
+  "rules": {
+    "general": {
+      "title": "Automa-Regeln",
+      "simplified": {
+        "intro": "Wenn du gegen Automa spielst, folgst du immer den Mehrpersonen-Regeln. Automa spielt allerdings nach vereinfachten Regeln:",
+        "noResources": "Automa erhält nie Rohstoffe und muss nie Rohstoffkosten bezahlen.",
+        "workersTwoColors": "Automa nutzt Arbeiterinnen von 2 Farben (gelb und grau). Die unterschiedlichen Farben spielen nur dann eine Rolle, wenn bestimmt werden muss, welche Arbeiterinnen eingesetzt und zurückgerufen werden sollen.",
+        "workerBumped": "Wenn Arbeiterinnen geschubst werden, die Automa gehören und weniger als Stärke 4 haben, kehren sie immer in den aktiven Bereich zurück.",
+        "workerNeverReturn": "Arbeiterinnen, die Automa gehören, werden nie in den allgemeinen Vorrat gelegt. Wenn einer ihrer Arbeiterinnen in den Tiefschlaf geht, bekommt Automa sofort eine neue.",
+        "victoryPoints": "Automa erhält nur Siegpunkte, so wie es diese Applikation vorgibt.",
+        "victoryPointFlow": "Automa wird im Allgemeinen während des Spiels mehr Siegpunkte als du bekommen. Je mehr sie allerdings im Spielverlauf bekommt, desto weniger bekommt sie am Spielende."
+      },
+      "takeAction": {
+        "title": "Aktion ausführen",
+        "oneAction": "Automa führt immer genau 1 Aktion pro Zug aus. Prüfe die verfügbaren Aktionen auf dem Bildschirm und wähle die erste (von oben nach unten) die ausgeführt werden kann."
+      },
+      "convertDances": {
+        "title": "Umwandlungstanz",
+        "noDance": "Automa lehrt niemals einen Tanz.",
+        "playerDance": "Wenn <b>du</b> einen Tanz lehrst, bekommst du sofort eine einmalige Belohnung von <b>4 Schritten auf der Gunst der Königin-Skala</b>. Automa nutzt nie einen Tanz."
+      },
+      "retrieve": {
+        "title": "Rückruf",
+        "automaRetrieve": "Wenn Automa Arbeiterinnen zurückruft, dann nur von der angezeigten Farbe. Jede Arbeiterin, die Stärke 4 hat, muss sofort in den Tiefschlaf gehen. Ansonsten erhöhe die Stärke der Arbeiterin um 1 und lege sie zurück auf Automas Andockstation. Automa bekommt nie Einkommen von zurückgerufenen Arbeiterinnen."
+      },
+      "bumpedWorkers": {
+        "title": "Geschubste Arbeiterinnen",
+        "workerBumped": "Wenn eine Automa-Arbeiterin mit Stärke 4 geschubst wird, muss sie sofort in den Tiefschlaf gehen. Ansonsten erhöhe die Stärke der Arbeiterin um 1 und lege sie zurück auf Automas Andockstation. Es gibt keinen Landungsbereich auf Automas Andockstation. Alle Arbeiterinnen auf der Station sind aktiv."
+      },
+      "hibernation": {
+        "title": "Tiefschlaf",
+        "workerHibernates": "Immer wenn eine Arbeiterin von Automa in den Tiefschlaf geht (z. B. durch Schubsen oder Rückruf), wird sie sofort durch eine neue Arbeiterin ersetzt, die eine Grundstärke je nach Schwierigkeitslevel bekommt (den Wert siehst auf dem Automa-Plättchen für die Stärke neuer Arbeiterinnen). Lege diese neue Arbeiterin auf Automas Andockstation.",
+        "chooseHibernationComb": "Dann wählt Automa den Sektor des Tiefschlafabteils, welcher ihr durch das Legen des Tiefschlaf-Plättchens gemäß der Mehrheitswertungen mehr Siegpunkte einbringt. Sie ignoriert dabei jegliche Auswirkung, die das auf deine Wertung haben könnte. Falls es einen Gleichstand gibt, wählt sie den Sektor mit 5 Feldern.",
+        "sectorPlacement": "Lege in dem gewählten Sektor ein Tiefschlaf-Plättchen von Automa auf das erste freie Feld in normaler Leserichtung. Für den Sektor mit 5 Feldern bedeutet das von links nach rechts. Für den Sektor mit 3 Feldern bedeutet das zuerst das oberste Feld, dann ein Feld aus der unteren Reihe von links nach rechts.",
+        "noBenefit": "Automa bekommt keine aufgedruckten Boni und tauscht keine Wabenreihen aus, falls sie diesen Bonus belegt."
+      },
+      "specialCase": {
+        "title": "Spezialfall",
+        "carvingExchange": "Für die Ruhmes-Wabe <i>Austausch</i>, kopierst du eine von Automas Ruhmes-Waben."
+      }
+    }
   },
   "gameAction": {
     "explore": "Erkunden",

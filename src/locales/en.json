@@ -3,7 +3,7 @@
   "home": {
     "title": "Apiary Solo Helper",
     "play1": "Play <a href='https://boardgamegeek.com/boardgame/400314/apiary' target='_blank' rel='noopener'><b>Apiary</b></a> against Automa, the artificial opponent.",
-    "play2": "TBD",
+    "play2": "This application replaces the Automa card deck, counts the victory points and guides you through the Automa ruleset.",
     "feedback": "Discussion and Feedback:"
   },
   "setup": {
@@ -96,6 +96,48 @@
     "turn": "Turn {turn}",
     "automa": "Automa",
     "score": "Victory Points"
+  },
+  "rules": {
+    "general": {
+      "title": "Automa Rules",
+      "simplified": {
+        "intro": "Playing against Automa, you follow the same rules as you would in a multiplayer game. Automa plays by a simplified ruleset:",
+        "noResources": "Automa never gains resources and never needs to pay resource costs.",
+        "workersTwoColors": "Automa uses workers of 2 different colors (yellow and gray). The different colors only  matter when determining which workers get placed and retrieved.",
+        "workerBumped": "When Automa’s workers are bumped, if they’re not strength-4, they always return to her active pool.",
+        "workerNeverReturn": "Automa’s workers never return to the general supply. When one of her workers hibernates, she immediately gains a new one.",
+        "victoryPoints": "Automa only gains victory points when indicated by this application.",
+        "victoryPointFlow": "Automa will generally gain more victory points than you will during the game. However, the more she gains during the game, the less she gains at the end."
+      },
+      "takeAction": {
+        "title": "Take an Action",
+        "oneAction": "Automa will always take exactly 1 action per turn. Check the available options on screen and pick the first one that can be executed from top to bottom."
+      },
+      "convertDances": {
+        "title": "Convert - Dances",
+        "noDance": "Automa never teaches dances.",
+        "playerDance": "If <b>you</b> teach a dance, you immediately receive a one-time benefit of <b>4 Queens Favor</b>. Automa never uses the dance."
+      },
+      "retrieve": {
+        "title": "Retrieve",
+        "automaRetrieve": "When Automa retrieves workers, she only retrieves the workers of the color shown. For each worker, if it is strength-4 it must immediately hibernate. Otherwise, increase the worker’s strength by +1 and return it to Automa’s docking mat, Automa gains no income from retrieving workers."
+      },
+      "bumpedWorkers": {
+        "title": "Bumped Workers",
+        "workerBumped": "When an Automa worker is bumped, if it is strength-4 it must immediately hibernate. Otherwise, increase the worker’s strength by +1 and return it to Automa’s docking mat. There is no landing area on Automa’s docking mat. All workers on the mat are active."
+      },
+      "hibernation": {
+        "title": "Hibernation",
+        "workerHibernates": "Any time an Automa worker hibernates (e.g., via being bumped or retrieved), it is immediately replaced by a new worker, gained with a strength based upon the difficulty level (the value is shown on the Gained Worker Strength token). Place this new worker on Automa’s docking mat.",
+        "chooseHibernationComb": "Then, Automa will choose the Hibernation Comb sector that, by placing her token there, increases the she victory points will score from area majority, more. She ignores any impact it might have on what you will score. If it is a tie, she chooses the 5-pod sector.",
+        "sectorPlacement": "In the chosen sector, place one of Automa’s hibernation tokens on the first vacant pod, using English reading order. For the 5-pod sector, this means left to right. For the 3-pod sector, this means first the top one, then the bottom line from left to right.",
+        "noBenefit": "Automa does not gain the benefit printed on the board and does not refresh a tile row, where applicable."
+      },
+      "specialCase": {
+        "title": "Special Case",
+        "carvingExchange": "For the carving <i>Exchange</i>, you copy one of Automa’s carvings."
+      }
+    }
   },
   "gameAction": {
     "explore": "Explore",

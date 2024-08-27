@@ -30,7 +30,10 @@
         </td>
       </tr>
     </table>
+    <a class="btn btn-sm btn-outline-secondary mt-3" data-bs-toggle="modal" data-bs-target="#automaRulesModal">{{t('rules.general.title')}}</a>
   </div>
+
+  <AutomaRulesModal/>
 </template>
 
 <script lang="ts">
@@ -42,11 +45,13 @@ import Tile from '@/services/enum/Tile'
 import getAllEnumValues from '@brdgm/brdgm-commons/src/util/enum/getAllEnumValues'
 import TileIcon from '../structure/TileIcon.vue'
 import getTileVictoryPoints from '@/util/getTileVictoryPoints'
+import AutomaRulesModal from '../rules/AutomaRulesModal.vue'
 
 export default defineComponent({
   name: 'SideBar',
   components: {
-    TileIcon
+    TileIcon,
+    AutomaRulesModal
   },
   setup() {
     const { t } = useI18n()
