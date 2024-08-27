@@ -1,7 +1,7 @@
 <template>
   <p>
     <WorkerIcon :worker="navigationState.worker" :value="4"/>?
-    <a class="btn btn-primary mt-1" data-bs-toggle="modal" data-bs-target="#carveModal">
+    <a class="btn btn-secondary mt-1" data-bs-toggle="modal" data-bs-target="#carveModal">
       {{t('turnBot.carve.title', {value:navigationState.carveSteps})}}
     </a>
   </p>

@@ -2,7 +2,7 @@
   <p>
     {{t('turnBot.pickHighest')}}<br/>
     <template v-for="value of 4" :key="value">
-      <button class="btn btn-primary mt-1" @click="gainTiles(value)">
+      <button class="btn btn-primary mt-2" @click="gainTiles(value)">
         <WorkerIcon :worker="navigationState.worker" :value="value"/>:
         <template v-for="(tile,index) of getAdvanceTiles(value)" :key="tile">
           <template v-if="index > 0"> + </template>

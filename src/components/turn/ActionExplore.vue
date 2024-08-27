@@ -2,7 +2,7 @@
   <p>
     {{t('turnBot.pickHighest')}}<br/>
     <template v-for="value of 4" :key="value">
-      <button class="btn btn-primary mt-1" @click="showExploreModal(value)">
+      <button class="btn btn-secondary mt-2" @click="showExploreModal(value)">
         <WorkerIcon :worker="navigationState.worker" :value="value"/>: {{t('turnBot.explore.title', {value})}}
       </button><br/>
     </template>

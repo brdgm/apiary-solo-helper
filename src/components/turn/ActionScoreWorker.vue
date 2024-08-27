@@ -2,7 +2,7 @@
   <p>
     {{t('turnBot.pickHighest')}}<br/>
     <template v-for="value of 4" :key="value">
-      <button class="btn btn-primary mt-1" @click="$emit('scoreVP', getWorkerVP(value))">
+      <button class="btn btn-primary mt-2" @click="$emit('scoreVP', getWorkerVP(value))">
         <WorkerIcon :worker="navigationState.worker" :value="value"/>:
         <VictoryPointIcon :value="getWorkerVP(value)"/>
       </button><br/>

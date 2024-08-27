@@ -35,7 +35,7 @@ export default class NavigationState {
         this.cardDeck = CardDeck.new()
       }
       this.tiles = BotTiles.new()
-      this.victoryPoints = 0
+      this.victoryPoints = 1
     }
 
     this.expertMode = state.setup.difficultyLevel >= 5
