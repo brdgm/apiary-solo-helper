@@ -43,6 +43,8 @@
   },
   "turnBot": {
     "title": "Automa",
+    "pickHighest": "Pick highest available:",
+    "placeWorker": "Place:",
     "retrieve": {
       "onDockingMat1": "<b>0</b>",
       "onDockingMatOr": "or <b>{value}</b>",
@@ -54,7 +56,36 @@
       "title": "Carve {value}",
       "followPath": "Follow this path and pick the <b>{position}</b> available carving tile.",
       "noTile": "If no carving tile is left, this action cannot be executed.",
-      "get": "Get"
+      "getTile": "Get"
+    },
+    "explore": {
+      "title": "Explore {value}",
+      "secondIteration": "Execute this action <b>again</b>, as a strength-4 worker was used.",
+      "moveQueenShip": "Move the QueenShip along the path as indicated:",
+      "moveDistance": "Stop it when it reaches a planet that has not yet been explored, or if it has moved <b>{value} step(s)</b>. If the planet has not yet been explored, Automa gets the token, but ignores the bonus.",
+      "placeResource": "If the planet has an empty resource space, place this token:",
+      "explorerPlanet": "Explore Planet",
+      "visitPlanet": "Visit Planet",
+      "rules": {
+        "title": "Show Movement Rules",
+        "skipLocations": "If the path takes the QueenShip to the planet that the QueenShip began this turn on or to the QueenShip starting location space, continue moving through it and do not count it towards the number of spaces moved.",
+        "example1": {
+          "title": "Explore Example 1",
+          "desc1": "Automa can move the QueenShip up to 4 spaces to find an explore token. The S-curve indicates it should move right, then down 1 row, then left, etc.",
+          "desc2": "Moving to the right, it reaches the end of the row (1). Therefore, it moves down one row and, ignoring the QueenShip starting location space, it then moves left (2). As this planet is already explored, it continues and discovers an unexplored planet (3)."
+        },
+        "example2": {
+          "title": "Explore Example 2",
+          "desc1": "The S-curve indicates that the QueenShip should move left, then up 1 row, then right, etc.",
+          "desc2": "After moving one space to the left (1), the QueenShip reaches the end of the row and cannot move up (see S-curve: The Path Ends on p.11). Since it can go no further along the S-curve path, it will reverse course and move right, then down 1 row, then left. Skipping the spot that it began on, the QueenShip moves right to an explored planet (2). Reaching the end of the row, it moves down to find an unexplored planet and explores there (3). If that planet had already been explored, the QueenShip would have moved once more to the left and explore there (4)."
+        }
+      }
+    },
+    "advance": {
+      "getTile": "For each tile type displayed for the selected worker, remove the first two tiles from the left. Automa gets the first one, the second one is discarded."
+    },
+    "scoreWorker": {
+      "placeScore": "Place the selected worker. Automa gains victory points."
     }
   },
   "turnPlayer": {

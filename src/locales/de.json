@@ -43,6 +43,8 @@
   },
   "turnBot": {
     "title": "Automa",
+    "pickHighest": "Wähle die stärkste verfügbare:",
+    "placeWorker": "Setze ein:",
     "retrieve": {
       "onDockingMat1": "<b>0</b>",
       "onDockingMatOr": "oder <b>{value}</b>",
@@ -54,7 +56,36 @@
       "title": "Rühmen {value}",
       "followPath": "Folge diesem Pfad und wähle die <b>{position}</b> verfügbare Ruhmeswabe.",
       "noTile": "Die Aktion kann nicht ausgeführt werden wenn keine Ruhmeswabe mehr verfügbar ist.",
-      "get": "Nimm"
+      "getTile": "Nimm"
+    },
+    "explore": {
+      "title": "Erkunden {value}",
+      "secondIteration": "Führe diese Aktion <b>nochmals</b> aus, weil eine Arbeiterin der Stärke 4 eingesetzt wurde.",
+      "moveQueenShip": "Bewege das Schiff der Königin entlang des Pfads wie angezeigt:",
+      "moveDistance": "Stoppe die Bewegung, wenn es einen Planet erreicht, der noch nicht erkundet ist, oder wenn es sich <b>{value} Schritt(e)</b> bewegt hat. Wenn der Planet noch nicht erkundet war, erhält Automa die Erkundungsscheibe (der Bonus wird ignoriert).",
+      "placeResource": "Wenn der Planet ein leeres Rohstofffeld hat, platziere diesen Marker:",
+      "explorerPlanet": "Erkunde Planet",
+      "visitPlanet": "Besuche Planet",
+      "rules": {
+        "title": "Bewegungs-Regeln anzeigen",
+        "skipLocations": "Wenn der vorgegebene Weg das Schiff der Königin zu dem Planeten führt, auf dem es den Zug begonnen hat oder auf das Feld, auf dem das Schiff zu Spielbeginn gestartet ist, ziehe einfach weiter, ohne das Feld mitzuzählen.",
+        "example1": {
+          "title": "Erkunden-Beispiel 1",
+          "desc1": "Automa darf das Schiff der Königin bis zu 4 Felder bewegen, um eine Erkundungsscheibe zu finden. Die S-Kurve zeigt an, dass es sich zuerst nach rechts bewegt, dann 1 Reihe nach unten, dann links, etc.",
+          "desc2": "Nach einem Schritt nach rechts erreicht es das Ende der Reihe (1). Deswegen zieht es eine Reihe nach unten, das Startfeld wird nicht mitgezählt, dann ein Schritt nach links (2). Da auch dieser Planet schon erkundet wurde, zieht es weiter und findet auf dem nächsten Feld einen noch nicht erkundeten Planeten (3)."
+        },
+        "example2": {
+          "title": "Erkunden-Beispiel 2",
+          "desc1": "Die S-Kurve zeigt an, dass das Schiff der Königin sich zuerst nach links bewegt, dann eine Reihe hoch, dann nach rechts, etc.",
+          "desc2": "Nachdem das Schiff der Königin ein Feld nach links gezogen ist (1), erreicht es das Ende der Reihe und kann nicht nach oben ziehen (siehe Seite 11 Der Weg endet). Weil es nicht weiter der S-Kurve folgen kann, nimmt es den umgekehrten Weg (also nach rechts, dann eine Reihe nach unten, dann nach links, etc). Es lässt das Feld aus, auf dem die Bewegung begann, und zieht zu einem weiteren schon erkundeten Planeten (2). Nun wieder am Ende der Reihe, zieht es nach unten, auf ein Feld mit nicht erkundetem Planeten und erkundet dort (3). Falls dieser Planet schon erkundet wäre, zöge das Schiffe ein Feld nach links und würde dort erkunden (4), egal ob der Planet bereits erkunde wäre oder nicht."
+        }
+      }
+    },
+    "advance": {
+      "getTile": "Entferne die ersten beiden Waben von links für jede für die gewählte Arbeiterin dargestellte Wabe. Automa erhält die erste davon, die zweite wird abgeworfen."
+    },
+    "scoreWorker": {
+      "placeScore": "Setze die gewählte Arbeiterin ein. Automa erhält die Siegpunkte."
     }
   },
   "turnPlayer": {

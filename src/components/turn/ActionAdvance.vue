@@ -1,6 +1,6 @@
 <template>
   <p>
-    Pick highest available:<br/>
+    {{t('turnBot.pickHighest')}}<br/>
     <template v-for="value of 4" :key="value">
       <button class="btn btn-primary mt-1" @click="gainTiles(value)">
         <WorkerIcon :worker="navigationState.worker" :value="value"/>:
@@ -11,6 +11,7 @@
       </button><br/>
     </template>
   </p>
+  <p v-html="t('turnBot.advance.getTile')"></p>
 </template>
 
 <script lang="ts">

@@ -8,13 +8,14 @@
 
   <ModalDialog id="carveModal" :title="t('turnBot.carve.title', {value:navigationState.carveSteps})">
     <template #body>
+      <p><span v-html="t('turnBot.placeWorker')"></span><span>&nbsp;</span><WorkerIcon :worker="navigationState.worker" :value="4"/></p>
       <p class="mb-3" v-html="t('turnBot.carve.followPath', {position:t(`position.${navigationState.carveSteps}`)})"></p>
       <AppIcon type="carve-s-curve" :name="navigationState.sCurve" class="s-curve"/>
       <p class="mt-3" v-html="t('turnBot.carve.noTile')"></p>
     </template>
     <template #footer>
       <button class="btn btn-primary" data-bs-dismiss="modal" @click="gainCarving()">
-        {{t('turnBot.carve.get')}}
+        {{t('turnBot.carve.getTile')}}
         <TileIcon :tile="carvingTile"/>
       </button>
       <button class="btn btn-secondary" data-bs-dismiss="modal">{{t('action.cancel')}}</button>
