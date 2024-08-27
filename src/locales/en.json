@@ -92,6 +92,27 @@
     "title": "Player",
     "takeYourTurn": "Take your turn."
   },
+  "endGameScoring": {
+    "title": "Scoring",
+    "automa": {
+      "title": "Automa",
+      "tally": "Add the following to Automa's score:"
+    },
+    "player": {
+      "title": "Player",
+      "tally": "Add the following to your score:"
+    },
+    "option": {
+      "seedCards": "Meeting the conditions on any <b>seed cards</b> you planted",
+      "tiles": "<b>Farms</b>, <b>recruits</b>, and <b>developments</b> you built",
+      "carvings": "Meeting the conditions on any <b>carvings</b> you built",
+      "queensFavor": "Your position on the <b>Queen’s Favor</b> track",
+      "hiveMatFrames": "<b>Filling</b> your hive mat and frames",
+      "factionAbility": "Your <b>faction’s endgame ability</b>",
+      "hibernationComb": "Winning <b>Hibernation Comb</b> sector majorities"
+    },
+    "ties": "<b>Ties</b>: In the event of a tie, you win if you have taught a dance. If not, Automa wins."
+  },
   "sideBar": {
     "turn": "Turn {turn}",
     "automa": "Automa",
@@ -161,6 +182,7 @@
     "abortGameConfirm": "Aborting the running game - are you sure?",
     "endGame": "End Game",
     "endGameConfirm": "End this game and return to home screen - are you sure?",
+    "endGameGoToScoringConfirm": "End this game and go to scoring screen?",
     "cancel": "Cancel",
     "backToHome": "Back to Home",
     "back": "Back",

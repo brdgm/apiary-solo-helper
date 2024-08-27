@@ -26,7 +26,9 @@ export default class NavigationState {
   public constructor(route: RouteLocation, state: State) {
     this.turn = getIntRouteParam(route, 'turn')
 
-    const bot = getLastBotPersistence(state, this.turn)
+    const lastTurn = (route.name == 'EndGameScoring')
+    const bot = getLastBotPersistence(state, this.turn, lastTurn)
+
     if (bot) {
       this.cardDeck = CardDeck.fromPersistence(bot.cardDeck)
       this.tiles = BotTiles.fromPersistence(bot.tiles)
@@ -58,8 +60,8 @@ export default class NavigationState {
 
 }
 
-function getLastBotPersistence(state: State, turn: number) : BotPersistence | undefined {
+function getLastBotPersistence(state: State, turn: number, lastTurn: boolean) : BotPersistence | undefined {
   return state.turns
-    .toSorted((item1,item2) => item1.turn - item2.turn)
-    .findLast(item => item.turn < turn && item.bot)?.bot
+      .toSorted((item1,item2) => item1.turn - item2.turn)
+      .findLast(item => ((item.turn < turn) || lastTurn) && item.bot)?.bot
 }

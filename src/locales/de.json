@@ -92,6 +92,27 @@
     "title": "Spieler",
     "takeYourTurn": "Führe deinen Zug aus."
   },
+  "endGameScoring": {
+    "title": "Endauswertung",
+    "automa": {
+      "title": "Automa",
+      "tally": "Addiere folgendes zum Punktestand von Automa:"
+    },
+    "player": {
+      "title": "Spieler",
+      "tally": "Addiere folgendes zu deinem Punktestand:"
+    },
+    "option": {
+      "seedCards": "Erfüllen der Bedingungen deiner ausgesäten <b>Saatkarten</b>",
+      "tiles": "Gebaute <b>Agrar-</b>, <b>Anwerbungs-</b> und <b>Entwicklungs-Waben</b>",
+      "carvings": "Erfüllen der Bedingungen deiner <b>Ruhmes-Waben</b>",
+      "queensFavor": "Die Position deines Farbwürfels auf der Skala für die <b>Gunst der Königin</b>",
+      "hiveMatFrames": "<b>Vollständiges Bebauen</b> deines Bienenstocks und deiner Rahmen",
+      "factionAbility": "Die <b>Endwertungsfähigkeit deiner Fraktion</b>",
+      "hibernationComb": "Mehrheitswertungen im <b>Tiefschlafabteil</b>"
+    },
+    "ties": "<b>Gleichstand</b>: Falls es am Spielende einen Gleichstand gibt, gewinnst du, wenn du einen Tanz gelehrt hast. Hast du keinen Tanz gelehrt, gewinnt Automa."
+  },
   "sideBar": {
     "turn": "Zug {turn}",
     "automa": "Automa",
@@ -161,6 +182,7 @@
     "abortGameConfirm": "Das aktuelle Spiel wird abgebrochen - bist du sicher?",
     "endGame": "Spiel beenden",
     "endGameConfirm": "Dieses Spiel wird beendet - bist du sicher?",
+    "endGameGoToScoringConfirm": "Spiel beenden und zur Endwertung gehen?",
     "cancel": "Abbrechen",
     "backToHome": "Zurück zum Anfang",
     "back": "Zurück",

@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <div>
+    <div v-if="navigationState.turn > 0">
       {{t('sideBar.turn', {turn:navigationState.turn})}}
     </div>
     <div class="mt-2">
