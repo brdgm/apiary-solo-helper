@@ -49,6 +49,12 @@
       "onDockingMat2": "auf der Andockstation?",
       "retrieveAll1": "Rufe alle",
       "retrieveAll2": "zurück &"
+    },
+    "carve": {
+      "title": "Rühmen {value}",
+      "followPath": "Folge diesem Pfad und wähle die <b>{position}</b> verfügbare Ruhmeswabe.",
+      "noTile": "Die Aktion kann nicht ausgeführt werden wenn keine Ruhmeswabe mehr verfügbar ist.",
+      "get": "Nimm"
     }
   },
   "turnPlayer": {
@@ -67,6 +73,11 @@
     "research": "Forschen",
     "advance": "Ausbauen",
     "carve": "Rühmen"
+  },
+  "position": {
+    "1": "1.",
+    "2": "2.",
+    "3": "3."
   },
   "action": {
     "playGame": "Spielen",

@@ -49,6 +49,12 @@
       "onDockingMat2": "on docking mat?",
       "retrieveAll1": "Retrieve all",
       "retrieveAll2": "&"
+    },
+    "carve": {
+      "title": "Carve {value}",
+      "followPath": "Follow this path and pick the <b>{position}</b> available carving tile.",
+      "noTile": "If no carving tile is left, this action cannot be executed.",
+      "get": "Get"
     }
   },
   "turnPlayer": {
@@ -67,6 +73,11 @@
     "research": "Research",
     "advance": "Advance",
     "carve": "Carve"
+  },
+  "position": {
+    "1": "1st",
+    "2": "2nd",
+    "3": "3rd"
   },
   "action": {
     "playGame": "Play Game",
