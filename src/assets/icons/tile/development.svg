@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 10.6 16.4" style="enable-background:new 0 0 10.6 16.4;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{clip-path:url(#SVGID_00000079470185812886389930000014563773379997351842_);fill:none;stroke:#FFFFFF;stroke-width:0.293;stroke-miterlimit:10;}
+</style>
+<polygon points="4.5,0.2 1,8.2 4.2,8.3 0.6,15.6 10.3,5.4 5.9,5.5 8.8,0.2 "/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="0.1" width="10.5" height="15.8"/>
+	</defs>
+	<clipPath id="SVGID_00000024716549034697573420000013439774503717564076_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<polygon style="clip-path:url(#SVGID_00000024716549034697573420000013439774503717564076_);fill:none;stroke:#FFFFFF;stroke-width:0.293;stroke-miterlimit:10;" points="
+		0.6,15.6 10.3,5.4 5.9,5.5 8.8,0.2 4.5,0.2 1,8.2 4.2,8.3 	"/>
+</g>
+</svg>

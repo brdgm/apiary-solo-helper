@@ -1,0 +1,199 @@
+{
+  "gameTitle": "Astrobienen",
+  "home": {
+    "title": "Astrobienen Solo Helper",
+    "play1": "Spiele <a href='https://boardgamegeek.com/boardgame/400314/Astrobienen' target='_blank' rel='noopener'><b>Astrobienen</b></a> gegen Automa, die künstliche Gegenspielerin.",
+    "play2": "Diese Applikation ersetzt das Automa-Kartendeck, zählt die Siegpunkte und führt dich durch das Automa-Regelwerk.",
+    "feedback": "Discussion and Feedback:"
+  },
+  "setup": {
+    "title": "Spielaufbau",
+    "general": {
+      "title": "Allgemeiner Aufbau",
+      "setup2Players": "Baue das Spiel für 2 Personen auf.",
+      "pickPlayerColor": "Wähle eine Spielerfarbe (<i>grau</i> und <i>gelb</i> werden von Automa verwendet).",
+      "remove": {
+        "title": "Entferne aus dem Spiel:",
+        "seedCards": "Saatkarten mit interaktiven Einmalnutzen: 32, 35, 37 und 38",
+        "carvingTiles": "Ruhmeswabe <i>Ausbreitung</i>",
+        "factions": "Fraktionen <i>Ria</i> und <i>Capen</i>"
+      }
+    },
+    "difficultyLevel": {
+      "title": "Schwierigkeitsgrad",
+      "easy": "Leicht",
+      "hard": "Schwer",
+      "level": "Stufe {level}",
+      "expertMode": "Experten-Modus"
+    }
+  },
+  "setupBot": {
+    "title": "Automa Spielaufbau",
+    "botColor": "Die primäre Spielerfarbe von Automa ist grau.",
+    "firstPlayerScoreTrack": "Automa beginnt das Spiel. Lege einen grauen Farbwürfel auf der Siegpunktskala auf das <b>Feld mit 1</b>.",
+    "returnPlayerTokens": "Lege die anderen Farbwürfel in die Schachtel zurück, weil Automa keine Schritte auf der Skala für die Gunst der Königin voranschreitet und keinen Tanz lehrt.",
+    "placeDockingMat": {
+      "normal": "Lege die Automa-Andockstation mit der <b>normalen Seite</b> nach oben.",
+      "expert": "Lege die Automa-Andockstation mit der <b>Experten-Seite</b> nach oben."
+    },
+    "noHiveMatFactionTile": "Automa bekommt kein Bienenstock-Tableau und kein Startplättchen.",
+    "placeHibernationTokens": "Lege 7 graue Tiefschlafplättchen auf ihre Andockstation.",
+    "placeWorkers": "Lege die folgenden Arbeiterinnen auf ihre Andockstation:",
+    "placeAutomaGainedWorkerStrength": "Lege das Automa-Plättchen für die Stärke neuer Arbeiterinnen auf ihre Andockstation mit der <b>Stärke {value}</b> nach oben."
+  },
+  "turnBot": {
+    "title": "Automa",
+    "pickHighest": "Wähle die stärkste verfügbare:",
+    "placeWorker": "Setze ein:",
+    "retrieve": {
+      "onDockingMat1": "<b>0</b>",
+      "onDockingMatOr": "oder <b>{value}</b>",
+      "onDockingMat2": "auf der Andockstation?",
+      "retrieveAll1": "Rufe alle",
+      "retrieveAll2": "zurück &"
+    },
+    "carve": {
+      "title": "Rühmen {value}",
+      "followPath": "Folge diesem Pfad und wähle die <b>{position}</b> verfügbare Ruhmeswabe.",
+      "noTile": "Die Aktion kann nicht ausgeführt werden wenn keine Ruhmeswabe mehr verfügbar ist.",
+      "getTile": "Nimm"
+    },
+    "explore": {
+      "title": "Erkunden {value}",
+      "secondIteration": "Führe diese Aktion <b>nochmals</b> aus, weil eine Arbeiterin der Stärke 4 eingesetzt wurde.",
+      "moveQueenShip": "Bewege das Schiff der Königin entlang des Pfads wie angezeigt:",
+      "moveDistance": "Stoppe die Bewegung, wenn es einen Planet erreicht, der noch nicht erkundet ist, oder wenn es sich <b>{value} Schritt(e)</b> bewegt hat. Wenn der Planet noch nicht erkundet war, erhält Automa die Erkundungsscheibe (der Bonus wird ignoriert).",
+      "placeResource": "Wenn der Planet ein leeres Rohstofffeld hat, platziere diesen Marker:",
+      "explorerPlanet": "Erkunde Planet",
+      "visitPlanet": "Besuche Planet",
+      "rules": {
+        "title": "Bewegungs-Regeln anzeigen",
+        "skipLocations": "Wenn der vorgegebene Weg das Schiff der Königin zu dem Planeten führt, auf dem es den Zug begonnen hat oder auf das Feld, auf dem das Schiff zu Spielbeginn gestartet ist, ziehe einfach weiter, ohne das Feld mitzuzählen.",
+        "example1": {
+          "title": "Erkunden-Beispiel 1",
+          "desc1": "Automa darf das Schiff der Königin bis zu 4 Felder bewegen, um eine Erkundungsscheibe zu finden. Die S-Kurve zeigt an, dass es sich zuerst nach rechts bewegt, dann 1 Reihe nach unten, dann links, etc.",
+          "desc2": "Nach einem Schritt nach rechts erreicht es das Ende der Reihe (1). Deswegen zieht es eine Reihe nach unten, das Startfeld wird nicht mitgezählt, dann ein Schritt nach links (2). Da auch dieser Planet schon erkundet wurde, zieht es weiter und findet auf dem nächsten Feld einen noch nicht erkundeten Planeten (3)."
+        },
+        "example2": {
+          "title": "Erkunden-Beispiel 2",
+          "desc1": "Die S-Kurve zeigt an, dass das Schiff der Königin sich zuerst nach links bewegt, dann eine Reihe hoch, dann nach rechts, etc.",
+          "desc2": "Nachdem das Schiff der Königin ein Feld nach links gezogen ist (1), erreicht es das Ende der Reihe und kann nicht nach oben ziehen (siehe Seite 11 Der Weg endet). Weil es nicht weiter der S-Kurve folgen kann, nimmt es den umgekehrten Weg (also nach rechts, dann eine Reihe nach unten, dann nach links, etc). Es lässt das Feld aus, auf dem die Bewegung begann, und zieht zu einem weiteren schon erkundeten Planeten (2). Nun wieder am Ende der Reihe, zieht es nach unten, auf ein Feld mit nicht erkundetem Planeten und erkundet dort (3). Falls dieser Planet schon erkundet wäre, zöge das Schiffe ein Feld nach links und würde dort erkunden (4), egal ob der Planet bereits erkunde wäre oder nicht."
+        }
+      }
+    },
+    "advance": {
+      "getTile": "Entferne die ersten beiden Waben von links für jede für die gewählte Arbeiterin dargestellte Wabe. Automa erhält die erste davon, die zweite wird abgeworfen."
+    },
+    "scoreWorker": {
+      "placeScore": "Setze die gewählte Arbeiterin ein. Automa erhält die Siegpunkte."
+    }
+  },
+  "turnPlayer": {
+    "title": "Spieler",
+    "takeYourTurn": "Führe deinen Zug aus."
+  },
+  "endGameScoring": {
+    "title": "Endauswertung",
+    "automa": {
+      "title": "Automa",
+      "tally": "Addiere folgendes zum Punktestand von Automa:"
+    },
+    "player": {
+      "title": "Spieler",
+      "tally": "Addiere folgendes zu deinem Punktestand:"
+    },
+    "option": {
+      "seedCards": "Erfüllen der Bedingungen deiner ausgesäten <b>Saatkarten</b>",
+      "tiles": "Gebaute <b>Agrar-</b>, <b>Anwerbungs-</b> und <b>Entwicklungs-Waben</b>",
+      "carvings": "Erfüllen der Bedingungen deiner <b>Ruhmes-Waben</b>",
+      "queensFavor": "Die Position deines Farbwürfels auf der Skala für die <b>Gunst der Königin</b>",
+      "hiveMatFrames": "<b>Vollständiges Bebauen</b> deines Bienenstocks und deiner Rahmen",
+      "factionAbility": "Die <b>Endwertungsfähigkeit deiner Fraktion</b>",
+      "hibernationComb": "Mehrheitswertungen im <b>Tiefschlafabteil</b>"
+    },
+    "ties": "<b>Gleichstand</b>: Falls es am Spielende einen Gleichstand gibt, gewinnst du, wenn du einen Tanz gelehrt hast. Hast du keinen Tanz gelehrt, gewinnt Automa."
+  },
+  "sideBar": {
+    "turn": "Zug {turn}",
+    "automa": "Automa",
+    "score": "Siegpunkte"
+  },
+  "rules": {
+    "general": {
+      "title": "Automa-Regeln",
+      "simplified": {
+        "intro": "Wenn du gegen Automa spielst, folgst du immer den Mehrpersonen-Regeln. Automa spielt allerdings nach vereinfachten Regeln:",
+        "noResources": "Automa erhält nie Rohstoffe und muss nie Rohstoffkosten bezahlen.",
+        "workersTwoColors": "Automa nutzt Arbeiterinnen von 2 Farben (gelb und grau). Die unterschiedlichen Farben spielen nur dann eine Rolle, wenn bestimmt werden muss, welche Arbeiterinnen eingesetzt und zurückgerufen werden sollen.",
+        "workerBumped": "Wenn Arbeiterinnen geschubst werden, die Automa gehören und weniger als Stärke 4 haben, kehren sie immer in den aktiven Bereich zurück.",
+        "workerNeverReturn": "Arbeiterinnen, die Automa gehören, werden nie in den allgemeinen Vorrat gelegt. Wenn einer ihrer Arbeiterinnen in den Tiefschlaf geht, bekommt Automa sofort eine neue.",
+        "victoryPoints": "Automa erhält nur Siegpunkte, so wie es diese Applikation vorgibt.",
+        "victoryPointFlow": "Automa wird im Allgemeinen während des Spiels mehr Siegpunkte als du bekommen. Je mehr sie allerdings im Spielverlauf bekommt, desto weniger bekommt sie am Spielende."
+      },
+      "takeAction": {
+        "title": "Aktion ausführen",
+        "oneAction": "Automa führt immer genau 1 Aktion pro Zug aus. Prüfe die verfügbaren Aktionen auf dem Bildschirm und wähle die erste (von oben nach unten) die ausgeführt werden kann."
+      },
+      "convertDances": {
+        "title": "Umwandlungstanz",
+        "noDance": "Automa lehrt niemals einen Tanz.",
+        "playerDance": "Wenn <b>du</b> einen Tanz lehrst, bekommst du sofort eine einmalige Belohnung von <b>4 Schritten auf der Gunst der Königin-Skala</b>. Automa nutzt nie einen Tanz."
+      },
+      "retrieve": {
+        "title": "Rückruf",
+        "automaRetrieve": "Wenn Automa Arbeiterinnen zurückruft, dann nur von der angezeigten Farbe. Jede Arbeiterin, die Stärke 4 hat, muss sofort in den Tiefschlaf gehen. Ansonsten erhöhe die Stärke der Arbeiterin um 1 und lege sie zurück auf Automas Andockstation. Automa bekommt nie Einkommen von zurückgerufenen Arbeiterinnen."
+      },
+      "bumpedWorkers": {
+        "title": "Geschubste Arbeiterinnen",
+        "workerBumped": "Wenn eine Automa-Arbeiterin mit Stärke 4 geschubst wird, muss sie sofort in den Tiefschlaf gehen. Ansonsten erhöhe die Stärke der Arbeiterin um 1 und lege sie zurück auf Automas Andockstation. Es gibt keinen Landungsbereich auf Automas Andockstation. Alle Arbeiterinnen auf der Station sind aktiv."
+      },
+      "hibernation": {
+        "title": "Tiefschlaf",
+        "workerHibernates": "Immer wenn eine Arbeiterin von Automa in den Tiefschlaf geht (z. B. durch Schubsen oder Rückruf), wird sie sofort durch eine neue Arbeiterin ersetzt, die eine Grundstärke je nach Schwierigkeitslevel bekommt (den Wert siehst auf dem Automa-Plättchen für die Stärke neuer Arbeiterinnen). Lege diese neue Arbeiterin auf Automas Andockstation.",
+        "chooseHibernationComb": "Dann wählt Automa den Sektor des Tiefschlafabteils, welcher ihr durch das Legen des Tiefschlaf-Plättchens gemäß der Mehrheitswertungen mehr Siegpunkte einbringt. Sie ignoriert dabei jegliche Auswirkung, die das auf deine Wertung haben könnte. Falls es einen Gleichstand gibt, wählt sie den Sektor mit 5 Feldern.",
+        "sectorPlacement": "Lege in dem gewählten Sektor ein Tiefschlaf-Plättchen von Automa auf das erste freie Feld in normaler Leserichtung. Für den Sektor mit 5 Feldern bedeutet das von links nach rechts. Für den Sektor mit 3 Feldern bedeutet das zuerst das oberste Feld, dann ein Feld aus der unteren Reihe von links nach rechts.",
+        "noBenefit": "Automa bekommt keine aufgedruckten Boni und tauscht keine Wabenreihen aus, falls sie diesen Bonus belegt."
+      },
+      "specialCase": {
+        "title": "Spezialfall",
+        "carvingExchange": "Für die Ruhmes-Wabe <i>Austausch</i>, kopierst du eine von Automas Ruhmes-Waben."
+      }
+    }
+  },
+  "gameAction": {
+    "explore": "Erkunden",
+    "grow": "Wachsen",
+    "convert": "Umwandeln",
+    "research": "Forschen",
+    "advance": "Ausbauen",
+    "carve": "Rühmen"
+  },
+  "position": {
+    "1": "1.",
+    "2": "2.",
+    "3": "3."
+  },
+  "action": {
+    "playGame": "Spielen",
+    "startGame": "Spiel starten",
+    "next": "Weiter",
+    "nextRound": "Nächste Runde",
+    "abortGame": "Spiel abbrechen",
+    "abortGameConfirm": "Das aktuelle Spiel wird abgebrochen - bist du sicher?",
+    "endGame": "Spiel beenden",
+    "endGameConfirm": "Dieses Spiel wird beendet - bist du sicher?",
+    "endGameGoToScoringConfirm": "Spiel beenden und zur Endwertung gehen?",
+    "cancel": "Abbrechen",
+    "backToHome": "Zurück zum Anfang",
+    "back": "Zurück",
+    "close": "Schließen",
+    "ok": "OK"
+  },
+  "footer": {
+    "credits": "Credits"
+  },
+  "serviceWorkerUpdatedRefresh": {
+    "title": "Applikation neu laden",
+    "notice": "Die Applikation wurde aktualisiert - möchtest du die Seite neu laden um die neueste Version zu nutzen?"
+  }
+}
