@@ -1,13 +1,16 @@
 <template>
   <p>
-    <b>0</b> <WorkerIcon :worker="navigationState.worker"/>
+    <span v-html="t('turnBot.retrieve.onDockingMat1')"></span> <WorkerIcon :worker="navigationState.worker"/>
     <span v-for="value of navigationState.retrieveLimit" :key="value">
-    <span>&nbsp;</span><span>or</span><span>&nbsp;</span>
-    <b>{{value}}</b> <WorkerIcon :worker="navigationState.worker"/></span>
-    <span>&nbsp;</span><span>on docking mat?</span><span>&nbsp;</span>
+    <span>&nbsp;</span><span v-html="t('turnBot.retrieve.onDockingMatOr', {value})"></span><span>&nbsp;</span>
+    <WorkerIcon :worker="navigationState.worker"/></span>
+    <span>&nbsp;</span><span v-html="t('turnBot.retrieve.onDockingMat2')"></span><span>&nbsp;</span>
 
     <button class="btn btn-primary mt-1" @click="$emit('scoreVP', 2)">
-      Retrieve all <WorkerIcon :worker="navigationState.worker"/> & <VictoryPointIcon :value="2"/>
+      <span v-html="t('turnBot.retrieve.retrieveAll1')"></span><span>&nbsp;</span>
+      <WorkerIcon :worker="navigationState.worker"/>
+      <span>&nbsp;</span><span v-html="t('turnBot.retrieve.retrieveAll2')"></span><span>&nbsp;</span>
+      <VictoryPointIcon :value="2"/>
     </button>
   </p>
 </template>

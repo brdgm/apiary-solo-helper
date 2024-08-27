@@ -42,7 +42,14 @@
     "placeAutomaGainedWorkerStrength": "Place the Automa Gained Worker Strength token on the docking mat with the <b>value {value}</b> shown."
   },
   "turnBot": {
-    "title": "Automa"
+    "title": "Automa",
+    "retrieve": {
+      "onDockingMat1": "<b>0</b>",
+      "onDockingMatOr": "or <b>{value}</b>",
+      "onDockingMat2": "on docking mat?",
+      "retrieveAll1": "Retrieve all",
+      "retrieveAll2": "&"
+    }
   },
   "turnPlayer": {
     "title": "Player",

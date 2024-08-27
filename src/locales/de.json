@@ -42,7 +42,14 @@
     "placeAutomaGainedWorkerStrength": "Lege das Automa-Plättchen für die Stärke neuer Arbeiterinnen auf ihre Andockstation mit der <b>Stärke {value}</b> nach oben."
   },
   "turnBot": {
-    "title": "Automa"
+    "title": "Automa",
+    "retrieve": {
+      "onDockingMat1": "<b>0</b>",
+      "onDockingMatOr": "oder <b>{value}</b>",
+      "onDockingMat2": "auf der Andockstation?",
+      "retrieveAll1": "Rufe alle",
+      "retrieveAll2": "zurück &"
+    }
   },
   "turnPlayer": {
     "title": "Spieler",
