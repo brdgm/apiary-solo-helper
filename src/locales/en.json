@@ -48,6 +48,11 @@
     "title": "Player",
     "takeYourTurn": "Take your turn."
   },
+  "sideBar": {
+    "turn": "Turn {turn}",
+    "automa": "Automa",
+    "score": "Victory Points"
+  },
   "gameAction": {
     "explore": "Explore",
     "grow": "Grow",

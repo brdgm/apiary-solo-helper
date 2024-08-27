@@ -48,6 +48,11 @@
     "title": "Spieler",
     "takeYourTurn": "Führe deinen Zug aus."
   },
+  "sideBar": {
+    "turn": "Zug {turn}",
+    "automa": "Automa",
+    "score": "Siegpunkte"
+  },
   "gameAction": {
     "explore": "Erkunden",
     "grow": "Wachsen",

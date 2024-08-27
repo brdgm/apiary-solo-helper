@@ -1,13 +1,15 @@
 <template>
   <div class="sidebar">
-    <p>
-      Turn {{navigationState.turn}}
-    </p>
-    <b>Automa</b>
+    <div>
+      {{t('sideBar.turn', {turn:navigationState.turn})}}
+    </div>
+    <div class="mt-2">
+      <b>{{t('sideBar.automa')}}</b> ({{state.setup.difficultyLevel}})
+    </div>
     <table class="vp-table">
       <tr>
         <th scope="row">
-          Score
+          {{t('sideBar.score')}}
         </th>
         <td class="number">
           {{navigationState.victoryPoints}}
@@ -39,6 +41,7 @@ import { useStateStore } from '@/store/state'
 import Tile from '@/services/enum/Tile'
 import getAllEnumValues from '@brdgm/brdgm-commons/src/util/enum/getAllEnumValues'
 import TileIcon from '../structure/TileIcon.vue'
+import getTileVictoryPoints from '@/util/getTileVictoryPoints'
 
 export default defineComponent({
   name: 'SideBar',
@@ -70,26 +73,7 @@ export default defineComponent({
   },
   methods: {
     getTileVP(tile: Tile) : number {
-      if (this.navigationState.expertMode) {
-        switch (tile) {
-          case Tile.FARM: return 2
-          case Tile.RECRUIT: return 3
-          case Tile.DEVELOPMENT: return 4
-          case Tile.CARVING: return 7
-          case Tile.EXPLORE: return 4
-          default: return 0
-        }
-      }
-      else {
-        switch (tile) {
-          case Tile.FARM: return 1
-          case Tile.RECRUIT: return 2
-          case Tile.DEVELOPMENT: return 3
-          case Tile.CARVING: return 7
-          case Tile.EXPLORE: return 3
-          default: return 0
-        }
-      }
+      return getTileVictoryPoints(tile, this.navigationState.expertMode)
     }
   }
 })
@@ -98,11 +82,11 @@ export default defineComponent({
 <style lang="scss" scoped>
 .sidebar {
   float: right;
-  width: 130px;
+  width: 145px;
   margin-left: 15px;
   margin-bottom: 10px;
   margin-right: -12px;
-  padding: 15px 0px 15px 15px;
+  padding: 15px 5px 15px 15px;
   background-color: #ddd;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -111,8 +95,15 @@ export default defineComponent({
   height: 1.25rem;
   width: 1.25rem;
 }
-.vp-table {
+.level {
   font-size: 14px;
+  font-style: italic;
+}
+.vp-table {
+  font-size: 13px;
+  th, td {
+    vertical-align: top;
+  }
   th {
     font-weight: normal;
   }
