@@ -95,7 +95,6 @@ export default defineComponent({
       this.$router.push(`/turn/${this.turn+1}/player`)
     },
     nextScoreVP(vp: number) : void {
-      // score X VP
       this.next(vp)
     },
     nextCollectTiles(tiles: Tile[]) : void {

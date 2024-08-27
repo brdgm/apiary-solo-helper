@@ -4,25 +4,25 @@
       Turn {{navigationState.turn}}
     </p>
     <b>Automa</b>
-    <table class="small">
+    <table class="vp-table">
       <tr>
-        <td>
+        <th scope="row">
           Score
-        </td>
+        </th>
         <td class="number">
           {{navigationState.victoryPoints}}
         </td>
       </tr>
       <tr v-for="tile of tiles" :key="tile">
-        <td>
+        <th scope="row">
           {{navigationState.tiles.count(tile)}} x <TileIcon :tile="tile" class="tileIcon"/> =
-        </td>
+        </th>
         <td class="number">
           {{getTileVP(tile) * navigationState.tiles.count(tile)}}
         </td>
       </tr>
       <tr>
-        <td></td>
+        <th scope="row"></th>
         <td class="number total">
           {{totalVP}}
         </td>
@@ -98,24 +98,32 @@ export default defineComponent({
 <style lang="scss" scoped>
 .sidebar {
   float: right;
-  width: 150px;
-  margin-left: 10px;
+  width: 130px;
+  margin-left: 15px;
   margin-bottom: 10px;
-  @media (max-width: 600px) {
-    width: 100px;
-  }
+  margin-right: -12px;
+  padding: 15px 0px 15px 15px;
+  background-color: #ddd;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .tileIcon {
   height: 1.25rem;
   width: 1.25rem;
 }
-.number {
-  text-align: right;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.total {
-  border-top: 1px solid black;
-  font-weight: bold;
+.vp-table {
+  font-size: 14px;
+  th {
+    font-weight: normal;
+  }
+  .number {
+    text-align: right;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .total {
+    border-top: 1px solid black;
+    font-weight: bold;
+  }
 }
 </style>
