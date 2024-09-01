@@ -173,6 +173,9 @@
     "2": "2nd",
     "3": "3rd"
   },
+  "notfound": {
+    "title": "Not Found"
+  },
   "action": {
     "playGame": "Play Game",
     "startGame": "Start Game",

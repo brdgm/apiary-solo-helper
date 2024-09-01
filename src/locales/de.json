@@ -173,6 +173,9 @@
     "2": "2.",
     "3": "3."
   },
+  "notfound": {
+    "title": "Nicht Gefunden"
+  },
   "action": {
     "playGame": "Spielen",
     "startGame": "Spiel starten",
