@@ -36,8 +36,8 @@ import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useStateStore } from '@/store/state'
 import FooterButtons from '@/components/structure/FooterButtons.vue'
-import WorkerIcon from '@/components/structure/WorkerIcon.vue';
-import Worker from '@/services/enum/Worker';
+import WorkerIcon from '@/components/structure/WorkerIcon.vue'
+import Worker from '@/services/enum/Worker'
 
 export default defineComponent({
   name: 'SetupBot',
