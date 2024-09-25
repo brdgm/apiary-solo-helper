@@ -7,28 +7,30 @@
       <b>{{t('sideBar.automa')}}</b> ({{state.setup.difficultyLevel}})
     </div>
     <table class="vp-table">
-      <tr>
-        <th scope="row">
-          {{t('sideBar.score')}}
-        </th>
-        <td class="number">
-          {{navigationState.victoryPoints}}
-        </td>
-      </tr>
-      <tr v-for="tile of tiles" :key="tile">
-        <th scope="row">
-          {{navigationState.tiles.count(tile)}} x <TileIcon :tile="tile" class="tileIcon"/> =
-        </th>
-        <td class="number">
-          {{getTileVP(tile) * navigationState.tiles.count(tile)}}
-        </td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td class="number total">
-          {{totalVP}}
-        </td>
-      </tr>
+      <tbody>
+        <tr>
+          <th scope="row">
+            {{t('sideBar.score')}}
+          </th>
+          <td class="number">
+            {{navigationState.victoryPoints}}
+          </td>
+        </tr>
+        <tr v-for="tile of tiles" :key="tile">
+          <th scope="row">
+            {{navigationState.tiles.count(tile)}} x <TileIcon :tile="tile" class="tileIcon"/> =
+          </th>
+          <td class="number">
+            {{getTileVP(tile) * navigationState.tiles.count(tile)}}
+          </td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td class="number total">
+            {{totalVP}}
+          </td>
+        </tr>
+      </tbody>
     </table>
     <a class="btn btn-sm btn-outline-secondary mt-3" data-bs-toggle="modal" data-bs-target="#automaRulesModal">{{t('rules.general.title')}}</a>
   </div>

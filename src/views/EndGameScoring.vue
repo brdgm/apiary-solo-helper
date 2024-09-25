@@ -31,9 +31,9 @@ import { defineComponent } from 'vue'
 import { useI18n } from 'vue-i18n'
 import FooterButtons from '@/components/structure/FooterButtons.vue'
 import { useStateStore } from '@/store/state'
-import { useRoute } from 'vue-router';
-import NavigationState from '@/util/NavigationState';
-import SideBar from '@/components/turn/SideBar.vue';
+import { useRoute } from 'vue-router'
+import NavigationState from '@/util/NavigationState'
+import SideBar from '@/components/turn/SideBar.vue'
 
 export default defineComponent({
   name: 'EndGameScoring',
