@@ -1,0 +1,202 @@
+{
+  "gameTitle": "Apiary",
+  "home": {
+    "title": "Assistente Solo de Apiary",
+    "play1": "Jogue <a href='https://boardgamegeek.com/boardgame/400314/apiary' target='_blank' rel='noopener'><b>Apiary</b></a> contra o Automa, o oponente artificial.",
+    "play2": "Este aplicativo substitui o baralho de cartas do Automa, conta os pontos de vitória e guia você pelas regras do Automa.",
+    "feedback": "Discussão e Feedback:"
+  },
+  "setup": {
+    "title": "Preparação do Jogo",
+    "general": {
+      "title": "Preparação Geral",
+      "setup2Players": "Prepare uma partida para 2 jogadores.",
+      "pickPlayerColor": "Escolha uma cor de jogador (<i>cinza</i> e <i>amarelo</i> são usadas pelo Automa).",
+      "remove": {
+        "title": "Remova do jogo:",
+        "seedCards": "Cartas de semente com benefícios interativos de uso único: 32, 35, 37 e 38",
+        "carvingTiles": "Peça de escultura <i>Proliferação</i>",
+        "factions": "Facções <i>Ria</i> e <i>Capen</i>"
+      }
+    },
+    "difficultyLevel": {
+      "title": "Nível de Dificuldade",
+      "easy": "Fácil",
+      "hard": "Difícil",
+      "level": "Nível {level}",
+      "expertMode": "Modo Especialista"
+    }
+  },
+  "setupBot": {
+    "title": "Preparação do Automa",
+    "botColor": "A cor principal do Automa é cinza.",
+    "firstPlayerScoreTrack": "O Automa é o primeiro jogador. Coloque um marcador cinza no <b>espaço 1</b> da trilha de pontuação.",
+    "returnPlayerTokens": "Devolva os outros dois marcadores de jogador para a caixa, pois ele não avança na trilha do Favor da Rainha nem ensina danças.",
+    "placeDockingMat": {
+      "normal": "Coloque o tabuleiro de ancoragem do Automa com o <b>lado normal</b> voltado para cima.",
+      "expert": "Coloque o tabuleiro de ancoragem do Automa com o <b>lado especialista</b> voltado para cima."
+    },
+    "noHiveMatFactionTile": "O Automa não recebe um tabuleiro de colmeia nem uma peça de facção.",
+    "placeHibernationTokens": "Coloque 7 marcadores de hibernação cinza no tabuleiro de ancoragem dele.",
+    "placeWorkers": "Coloque os seguintes trabalhadores no tabuleiro de ancoragem dele:",
+    "placeAutomaGainedWorkerStrength": "Coloque a ficha de Força da Operária Recebida do Automa no tabuleiro de ancoragem com o <b>valor {value}</b> mostrado."
+  },
+  "turnBot": {
+    "title": "Automa",
+    "pickHighest": "Escolha o mais alto disponível:",
+    "placeWorker": "Coloque:",
+    "retrieve": {
+      "onDockingMat1": "<b>0</b>",
+      "onDockingMatOr": "ou <b>{value}</b>",
+      "onDockingMat2": "no tabuleiro de ancoragem?",
+      "retrieveAll1": "Recupere todos",
+      "retrieveAll2": "&"
+    },
+    "carve": {
+      "title": "Esculpir {value}",
+      "followPath": "Siga este caminho e pegue a <b>{position}</b> peça de escultura disponível.",
+      "noTile": "Se não houver peça de escultura restante, esta ação não pode ser executada.",
+      "getTile": "Pegue"
+    },
+    "explore": {
+      "title": "Explorar {value}",
+      "secondIteration": "Execute esta ação <b>novamente</b>, pois uma operária de força 4 foi usada.",
+      "moveQueenShip": "Mova a Nave Rainha ao longo do caminho conforme indicado:",
+      "moveDistance": "Pare quando ela chegar a um planeta que ainda não foi explorado, ou se tiver se movido <b>{value} passo(s)</b>. Se o planeta ainda não foi explorado, o Automa pega o marcador, mas ignora o bônus.",
+      "placeResource": "Se o planeta tiver um espaço de recurso vazio, coloque este marcador:",
+      "explorerPlanet": "Explorar Planeta",
+      "visitPlanet": "Visitar Planeta",
+      "rules": {
+        "title": "Mostrar Regras de Movimento",
+        "skipLocations": "Se o caminho levar a Nave Rainha ao planeta em que ela começou este turno ou ao espaço inicial, continue movendo e não conte esse espaço.",
+        "example1": {
+          "title": "Exemplo de Exploração 1",
+          "desc1": "O Automa pode mover a Nave Rainha até 4 espaços para encontrar um marcador de exploração. A curva em S indica que deve mover para a direita, depois descer 1 linha, depois para a esquerda, etc.",
+          "desc2": "Movendo para a direita, ela chega ao final da linha (1). Portanto, desce uma linha e, ignorando o espaço de início da Nave Rainha, move para a esquerda (2). Como este planeta já está explorado, continua e descobre um planeta não explorado (3)."
+        },
+        "example2": {
+          "title": "Exemplo de Exploração 2",
+          "desc1": "A curva em S indica que a Nave Rainha deve mover para a esquerda, depois subir 1 linha, depois para a direita, etc.",
+          "desc2": "Após mover um espaço para a esquerda (1), a Nave Rainha chega ao final da linha e não pode subir (ver curva em S: O Caminho Termina na p.11). Como não pode avançar mais na curva em S, ela inverte o curso e move para a direita, depois desce 1 linha, depois para a esquerda. Pulando o espaço em que começou, a Nave Rainha move para a direita até um planeta já explorado (2). Chegando ao final da linha, desce para encontrar um planeta não explorado e explora ali (3). Se esse planeta já tivesse sido explorado, a Nave Rainha teria se movido mais uma vez para a esquerda e explorado ali (4)."
+        }
+      }
+    },
+    "advance": {
+      "getTile": "Para cada tipo de peça exibida para a operária selecionada, remova as duas primeiras peças da esquerda. O Automa pega a primeira, a segunda é descartada."
+    },
+    "scoreWorker": {
+      "placeScore": "Coloque a operária selecionada. O Automa ganha pontos de vitória."
+    }
+  },
+  "turnPlayer": {
+    "title": "Jogador",
+    "takeYourTurn": "Faça sua jogada."
+  },
+  "endGameScoring": {
+    "title": "Pontuação Final",
+    "automa": {
+      "title": "Automa",
+      "tally": "Adicione o seguinte à pontuação do Automa:"
+    },
+    "player": {
+      "title": "Jogador",
+      "tally": "Adicione o seguinte à sua pontuação:"
+    },
+    "option": {
+      "seedCards": "Atendendo às condições de qualquer <b>carta de semente</b> que você plantou",
+      "tiles": "<b>Fazendas</b>, <b>recrutas</b> e <b>desenvolvimentos</b> que você construiu",
+      "carvings": "Atendendo às condições de qualquer <b>escultura</b> que você construiu",
+      "queensFavor": "Sua posição na trilha do <b>Favor da Rainha</b>",
+      "hiveMatFrames": "<b>Preenchendo</b> seu tabuleiro de colmeia e quadros",
+      "factionAbility": "Sua <b>habilidade de final de jogo da facção</b>",
+      "hibernationComb": "Vencendo <b>maiorias nos setores do Favo de Hibernação</b>"
+    },
+    "ties": "<b>Empates</b>: Em caso de empate, você vence se tiver ensinado uma dança. Caso contrário, o Automa vence."
+  },
+  "sideBar": {
+    "turn": "Rodada {turn}",
+    "automa": "Automa",
+    "score": "Pontos de Vitória"
+  },
+  "rules": {
+    "general": {
+      "title": "Regras do Automa",
+      "simplified": {
+        "intro": "Jogando contra o Automa, você segue as mesmas regras de uma partida multijogador. O Automa joga com regras simplificadas:",
+        "noResources": "O Automa nunca ganha recursos e nunca precisa pagar custos de recursos.",
+        "workersTwoColors": "O Automa usa operárias de 2 cores diferentes (amarelo e cinza). As cores só importam para determinar quais operárias serão colocadas e recuperadas.",
+        "workerBumped": "Quando as operárias do Automa são empurradas, se não forem de força 4, sempre retornam para a reserva ativa dele.",
+        "workerNeverReturn": "As operárias do Automa nunca retornam à reserva geral. Quando uma operária dele hiberna, ele imediatamente ganha uma nova.",
+        "victoryPoints": "O Automa só ganha pontos de vitória quando indicado por este aplicativo.",
+        "victoryPointFlow": "O Automa geralmente ganhará mais pontos de vitória que você durante o jogo. No entanto, quanto mais ele ganhar durante o jogo, menos ganhará no final."
+      },
+      "takeAction": {
+        "title": "Realizar uma Ação",
+        "oneAction": "O Automa sempre realiza exatamente 1 ação por turno. Verifique as opções disponíveis na tela e escolha a primeira que puder ser executada de cima para baixo."
+      },
+      "convertDances": {
+        "title": "Converter - Danças",
+        "noDance": "O Automa nunca ensina danças.",
+        "playerDance": "Se <b>você</b> ensinar uma dança, receba imediatamente um benefício único de <b>4 Favor da Rainha</b>. O Automa nunca usa a dança."
+      },
+      "retrieve": {
+        "title": "Recuperar",
+        "automaRetrieve": "Quando o Automa recupera operárias, ele só recupera as da cor mostrada. Para cada operária, se for de força 4, deve hibernar imediatamente. Caso contrário, aumente a força da operária em +1 e retorne-a ao tabuleiro de ancoragem do Automa. O Automa não recebe renda ao recuperar operárias."
+      },
+      "bumpedWorkers": {
+        "title": "Operárias Empurradas",
+        "workerBumped": "Quando uma operária do Automa é empurrada, se for de força 4, deve hibernar imediatamente. Caso contrário, aumente a força da operária em +1 e retorne-a ao tabuleiro de ancoragem do Automa. Não há área de pouso no tabuleiro de ancoragem do Automa. Todas as operárias no tabuleiro estão ativas."
+      },
+      "hibernation": {
+        "title": "Hibernação",
+        "workerHibernates": "Sempre que uma operária do Automa hiberna (por exemplo, ao ser empurrada ou recuperada), ela é imediatamente substituída por uma nova operária, com força baseada no nível de dificuldade (o valor é mostrado na ficha de Força da Operária Recebida). Coloque esta nova operária no tabuleiro de ancoragem do Automa.",
+        "chooseHibernationComb": "Depois, o Automa escolherá o setor do Favo de Hibernação que, ao colocar seu marcador ali, aumentará mais os pontos de vitória que ele marcará por maioria de área. Ele ignora qualquer impacto que isso possa ter na sua pontuação. Em caso de empate, ele escolhe o setor de 5 espaços.",
+        "sectorPlacement": "No setor escolhido, coloque um dos marcadores de hibernação do Automa no primeiro espaço vazio, seguindo a ordem de leitura ocidental. Para o setor de 5 espaços, isso significa da esquerda para a direita. Para o setor de 3 espaços, primeiro o de cima, depois a linha de baixo da esquerda para a direita.",
+        "noBenefit": "O Automa não recebe o benefício impresso no tabuleiro e não repõe uma fileira de fichas, quando aplicável."
+      },
+      "specialCase": {
+        "title": "Caso Especial",
+        "carvingExchange": "Para a escultura <i>Troca</i>, você copia uma das esculturas do Automa."
+      }
+    }
+  },
+  "gameAction": {
+    "explore": "Explorar",
+    "grow": "Cultivar",
+    "convert": "Converter",
+    "research": "Pesquisar",
+    "advance": "Avançar",
+    "carve": "Esculpir"
+  },
+  "position": {
+    "1": "1º",
+    "2": "2º",
+    "3": "3º"
+  },
+  "notfound": {
+    "title": "Não Encontrado"
+  },
+  "action": {
+    "playGame": "Jogar",
+    "startGame": "Iniciar Jogo",
+    "next": "Próximo",
+    "nextRound": "Próxima Rodada",
+    "abortGame": "Abortar Jogo",
+    "abortGameConfirm": "Abortar o jogo em andamento - tem certeza?",
+    "endGame": "Finalizar Jogo",
+    "endGameConfirm": "Finalizar este jogo e voltar para a tela inicial - tem certeza?",
+    "endGameGoToScoringConfirm": "Finalizar este jogo e ir para a tela de pontuação?",
+    "cancel": "Cancelar",
+    "backToHome": "Voltar para Início",
+    "back": "Voltar",
+    "close": "Fechar",
+    "ok": "OK"
+  },
+  "footer": {
+    "credits": "Créditos"
+  },
+  "serviceWorkerUpdatedRefresh": {
+    "title": "Atualizar Aplicativo",
+    "notice": "O aplicativo foi atualizado - deseja recarregar para usar a versão mais recente?"
+  }
+}

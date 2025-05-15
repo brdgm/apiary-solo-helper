@@ -63,7 +63,6 @@ export default class CardDeck {
 
   /**
    * Creates a shuffled new card deck.
-   * @param difficultyLevel DifficultyLevel
    */
   public static new() : CardDeck {
     const cards = shuffle(Cards.getAll())
