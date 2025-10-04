@@ -98,9 +98,9 @@ export default defineComponent({
       this.next(vp)
     },
     nextCollectTiles(tiles: Tile[]) : void {
-      tiles.forEach(tile => {
+      for (const tile of tiles) {
         this.navigationState.tiles.add(tile)
-      })
+      }
       this.next()
     }
   }
