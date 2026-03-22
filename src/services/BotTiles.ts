@@ -10,7 +10,9 @@ export default class BotTiles {
   private _tiles = new Map<Tile,number>()
 
   private constructor(tiles : TilePersistence[]) {
-    tiles.forEach(tile => this._tiles.set(tile.tile, tile.count))
+    for (const tile of tiles) {
+      this._tiles.set(tile.tile, tile.count)
+    }
   }
 
   add(tile : Tile) : void {
@@ -26,12 +28,12 @@ export default class BotTiles {
    */
   public toPersistence() : TilePersistence[] {
     const result : TilePersistence[] = []
-    getAllEnumValues(Tile).forEach(tile => {
+    for (const tile of getAllEnumValues(Tile)) {
       const count = this.count(tile)
       if (count > 0) {
         result.push({ tile, count })
       }
-    })
+    }
     return result
   }
 
