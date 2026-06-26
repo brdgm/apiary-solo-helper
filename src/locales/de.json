@@ -55,7 +55,7 @@
     "carve": {
       "title": "Rühmen {value}",
       "followPath": "Folge diesem Pfad und wähle die <b>{position}</b> verfügbare Ruhmeswabe.",
-      "noTile": "Die Aktion kann nicht ausgeführt werden wenn keine Ruhmeswabe mehr verfügbar ist.",
+      "noTile": "Die Aktion kann nicht ausgeführt werden, wenn keine Ruhmeswabe mehr verfügbar ist.",
       "getTile": "Nimm"
     },
     "explore": {
@@ -77,7 +77,7 @@
         "example2": {
           "title": "Erkunden-Beispiel 2",
           "desc1": "Die S-Kurve zeigt an, dass das Schiff der Königin sich zuerst nach links bewegt, dann eine Reihe hoch, dann nach rechts, etc.",
-          "desc2": "Nachdem das Schiff der Königin ein Feld nach links gezogen ist (1), erreicht es das Ende der Reihe und kann nicht nach oben ziehen (siehe Seite 11 Der Weg endet). Weil es nicht weiter der S-Kurve folgen kann, nimmt es den umgekehrten Weg (also nach rechts, dann eine Reihe nach unten, dann nach links, etc). Es lässt das Feld aus, auf dem die Bewegung begann, und zieht zu einem weiteren schon erkundeten Planeten (2). Nun wieder am Ende der Reihe, zieht es nach unten, auf ein Feld mit nicht erkundetem Planeten und erkundet dort (3). Falls dieser Planet schon erkundet wäre, zöge das Schiffe ein Feld nach links und würde dort erkunden (4), egal ob der Planet bereits erkunde wäre oder nicht."
+          "desc2": "Nachdem das Schiff der Königin ein Feld nach links gezogen ist (1), erreicht es das Ende der Reihe und kann nicht nach oben ziehen (siehe Seite 11 Der Weg endet). Weil es nicht weiter der S-Kurve folgen kann, nimmt es den umgekehrten Weg (also nach rechts, dann eine Reihe nach unten, dann nach links, etc). Es lässt das Feld aus, auf dem die Bewegung begann, und zieht zu einem weiteren schon erkundeten Planeten (2). Nun wieder am Ende der Reihe, zieht es nach unten, auf ein Feld mit nicht erkundetem Planeten und erkundet dort (3). Falls dieser Planet schon erkundet wäre, zöge das Schiff ein Feld nach links und würde dort erkunden (4), egal ob der Planet bereits erkundet wäre oder nicht."
         }
       }
     },
@@ -96,11 +96,11 @@
     "title": "Endauswertung",
     "automa": {
       "title": "Automa",
-      "tally": "Addiere folgendes zum Punktestand von Automa:"
+      "tally": "Addiere Folgendes zum Punktestand von Automa:"
     },
     "player": {
       "title": "Spieler",
-      "tally": "Addiere folgendes zu deinem Punktestand:"
+      "tally": "Addiere Folgendes zu deinem Punktestand:"
     },
     "option": {
       "seedCards": "Erfüllen der Bedingungen deiner ausgesäten <b>Saatkarten</b>",
@@ -126,7 +126,7 @@
         "noResources": "Automa erhält nie Rohstoffe und muss nie Rohstoffkosten bezahlen.",
         "workersTwoColors": "Automa nutzt Arbeiterinnen von 2 Farben (gelb und grau). Die unterschiedlichen Farben spielen nur dann eine Rolle, wenn bestimmt werden muss, welche Arbeiterinnen eingesetzt und zurückgerufen werden sollen.",
         "workerBumped": "Wenn Arbeiterinnen geschubst werden, die Automa gehören und weniger als Stärke 4 haben, kehren sie immer in den aktiven Bereich zurück.",
-        "workerNeverReturn": "Arbeiterinnen, die Automa gehören, werden nie in den allgemeinen Vorrat gelegt. Wenn einer ihrer Arbeiterinnen in den Tiefschlaf geht, bekommt Automa sofort eine neue.",
+        "workerNeverReturn": "Arbeiterinnen, die Automa gehören, werden nie in den allgemeinen Vorrat gelegt. Wenn eine ihrer Arbeiterinnen in den Tiefschlaf geht, bekommt Automa sofort eine neue.",
         "victoryPoints": "Automa erhält nur Siegpunkte, so wie es diese Applikation vorgibt.",
         "victoryPointFlow": "Automa wird im Allgemeinen während des Spiels mehr Siegpunkte als du bekommen. Je mehr sie allerdings im Spielverlauf bekommt, desto weniger bekommt sie am Spielende."
       },
@@ -149,7 +149,7 @@
       },
       "hibernation": {
         "title": "Tiefschlaf",
-        "workerHibernates": "Immer wenn eine Arbeiterin von Automa in den Tiefschlaf geht (z. B. durch Schubsen oder Rückruf), wird sie sofort durch eine neue Arbeiterin ersetzt, die eine Grundstärke je nach Schwierigkeitslevel bekommt (den Wert siehst auf dem Automa-Plättchen für die Stärke neuer Arbeiterinnen). Lege diese neue Arbeiterin auf Automas Andockstation.",
+        "workerHibernates": "Immer wenn eine Arbeiterin von Automa in den Tiefschlaf geht (z. B. durch Schubsen oder Rückruf), wird sie sofort durch eine neue Arbeiterin ersetzt, die eine Grundstärke je nach Schwierigkeitslevel bekommt (den Wert siehst du auf dem Automa-Plättchen für die Stärke neuer Arbeiterinnen). Lege diese neue Arbeiterin auf Automas Andockstation.",
         "chooseHibernationComb": "Dann wählt Automa den Sektor des Tiefschlafabteils, welcher ihr durch das Legen des Tiefschlaf-Plättchens gemäß der Mehrheitswertungen mehr Siegpunkte einbringt. Sie ignoriert dabei jegliche Auswirkung, die das auf deine Wertung haben könnte. Falls es einen Gleichstand gibt, wählt sie den Sektor mit 5 Feldern.",
         "sectorPlacement": "Lege in dem gewählten Sektor ein Tiefschlaf-Plättchen von Automa auf das erste freie Feld in normaler Leserichtung. Für den Sektor mit 5 Feldern bedeutet das von links nach rechts. Für den Sektor mit 3 Feldern bedeutet das zuerst das oberste Feld, dann ein Feld aus der unteren Reihe von links nach rechts.",
         "noBenefit": "Automa bekommt keine aufgedruckten Boni und tauscht keine Wabenreihen aus, falls sie diesen Bonus belegt."
